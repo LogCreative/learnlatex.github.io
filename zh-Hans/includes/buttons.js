@@ -1,7 +1,7 @@
-var buttons ={
-    "edit":             "editar",
-    "copy":             "copiar",
-    "Open in Overlaf":  "Aberto em Overleaf",
-    "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Excluir saída"
+var buttons = {
+    "edit":             "编辑",
+    "copy":             "复制",
+    "Open in Overleaf": "在 Overleaf 中打开",
+    "LaTeX Online":     "在线运行 LaTeX",
+    "Delete Output":    "清除输出"
 }
