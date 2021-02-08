@@ -80,3 +80,9 @@ defaults:
     values:
       lang: "tr"
       label: "Türkçe"
+  -
+    scope:
+      path: "zh-Hans"
+    values:
+      lang: "zh-Hans"
+      label: "简体中文"
