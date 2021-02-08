@@ -11,7 +11,7 @@
   pt: pt/contact.md
   tr: tr/contact.md
   vi: vi/contact.md
-  zh: zh/contact.md
+  zh-Hans: zh-Hans/contact.md
 - 
   de: de/extra-01.md
   en: en/extra-01.md
@@ -21,7 +21,7 @@
   pt: pt/extra-01.md
   tr: tr/extra-01.md
   vi: vi/extra-01.md
-  zh: zh/extra-01.md
+  zh-Hans: zh-Hans/extra-01.md
 -
   de: de/help.md
   en: en/help.md
@@ -31,7 +31,7 @@
   pt: pt/help.md
   tr: tr/help.md
   vi: vi/help.md
-  zh: zh/help.md
+  zh-Hans: zh-Hans/help.md
 -
   de: de/index.md
   en: en/index.md
@@ -41,7 +41,7 @@
   pt: pt/index.md
   tr: tr/index.md
   vi: vi/index.md
-  zh: zh/index.md
+  zh-Hans: zh-Hans/index.md
 -
   de: de/language-01.md
   en: en/language-01.md
@@ -51,10 +51,10 @@
   pt: pt/language-01.md
   tr: tr/language-01.md
   vi: vi/language-01.md
-  zh: zh/language-01.md
+  zh-Hans: zh-Hans/language-01.md
 -
   ja: ja/language-02.md
-  zh: zh/language-02.md
+  zh-Hans: zh-Hans/language-02.md
 -
   de: de/lesson-01
   en: en/lesson-01
@@ -64,7 +64,7 @@
   pt: pt/lesson-01
   tr: tr/lesson-01
   vi: vi/lesson-01
-  zh: zh/lesson-01
+  zh-Hans: zh-Hans/lesson-01
 -
   de: de/lesson-02
   en: en/lesson-02
@@ -74,7 +74,7 @@
   pt: pt/lesson-02
   tr: tr/lesson-02
   vi: vi/lesson-02
-  zh: zh/lesson-02
+  zh-Hans: zh-Hans/lesson-02
 -
   de: de/lesson-03
   en: en/lesson-03
@@ -84,7 +84,7 @@
   pt: pt/lesson-03
   tr: tr/lesson-03
   vi: vi/lesson-03
-  zh: zh/lesson-03
+  zh-Hans: zh-Hans/lesson-03
 -
   de: de/lesson-04
   en: en/lesson-04
@@ -94,7 +94,7 @@
   pt: pt/lesson-04
   tr: tr/lesson-04
   vi: vi/lesson-04
-  zh: zh/lesson-04
+  zh-Hans: zh-Hans/lesson-04
 -
   de: de/lesson-05
   en: en/lesson-05
@@ -104,7 +104,7 @@
   pt: pt/lesson-05
   tr: tr/lesson-05
   vi: vi/lesson-05
-  zh: zh/lesson-05
+  zh-Hans: zh-Hans/lesson-05
 -
   de: de/lesson-06
   en: en/lesson-06
@@ -114,7 +114,7 @@
   pt: pt/lesson-06
   tr: tr/lesson-06
   vi: vi/lesson-06
-  zh: zh/lesson-06
+  zh-Hans: zh-Hans/lesson-06
 -
   de: de/lesson-07
   en: en/lesson-07
@@ -124,7 +124,7 @@
   pt: pt/lesson-07
   tr: tr/lesson-07
   vi: vi/lesson-07
-  zh: zh/lesson-07
+  zh-Hans: zh-Hans/lesson-07
 -
   de: de/lesson-08
   en: en/lesson-08
@@ -134,7 +134,7 @@
   pt: pt/lesson-08
   tr: tr/lesson-08
   vi: vi/lesson-08
-  zh: zh/lesson-08
+  zh-Hans: zh-Hans/lesson-08
 -
   de: de/lesson-09
   en: en/lesson-09
@@ -144,7 +144,7 @@
   pt: pt/lesson-09
   tr: tr/lesson-09
   vi: vi/lesson-09
-  zh: zh/lesson-09
+  zh-Hans: zh-Hans/lesson-09
 -
   de: de/lesson-10
   en: en/lesson-10
@@ -154,7 +154,7 @@
   pt: pt/lesson-10
   tr: tr/lesson-10
   vi: vi/lesson-10
-  zh: zh/lesson-10
+  zh-Hans: zh-Hans/lesson-10
 -
   de: de/lesson-11
   en: en/lesson-11
@@ -164,7 +164,7 @@
   pt: pt/lesson-11
   tr: tr/lesson-11
   vi: vi/lesson-11
-  zh: zh/lesson-11
+  zh-Hans: zh-Hans/lesson-11
 -
   de: de/lesson-12
   en: en/lesson-12
@@ -174,7 +174,7 @@
   pt: pt/lesson-12
   tr: tr/lesson-12
   vi: vi/lesson-12
-  zh: zh/lesson-12
+  zh-Hans: zh-Hans/lesson-12
 -
   de: de/lesson-13
   en: en/lesson-13
@@ -184,7 +184,7 @@
   pt: pt/lesson-13
   tr: tr/lesson-13
   vi: vi/lesson-13
-  zh: zh/lesson-13
+  zh-Hans: zh-Hans/lesson-13
 -
   de: de/lesson-14
   en: en/lesson-14
@@ -194,7 +194,7 @@
   pt: pt/lesson-14
   tr: tr/lesson-14
   vi: vi/lesson-14
-  zh: zh/lesson-14
+  zh-Hans: zh-Hans/lesson-14
 -
   de: de/lesson-15
   en: en/lesson-15
@@ -204,7 +204,7 @@
   pt: pt/lesson-15
   tr: tr/lesson-15
   vi: vi/lesson-15
-  zh: zh/lesson-15
+  zh-Hans: zh-Hans/lesson-15
 -
   de: de/lesson-16
   en: en/lesson-16
@@ -214,7 +214,7 @@
   pt: pt/lesson-16
   tr: tr/lesson-16
   vi: vi/lesson-16
-  zh: zh/lesson-16
+  zh-Hans: zh-Hans/lesson-16
 - 
   de: de/licenses.md
   en: en/licenses.md
@@ -224,7 +224,7 @@
   pt: pt/licenses.md
   tr: tr/licenses.md
   vi: vi/licenses.md
-  zh: zh/licenses.md
+  zh-Hans: zh-Hans/licenses.md
 -
   de: de/mission.md
   en: en/mission.md
@@ -234,7 +234,7 @@
   pt: pt/mission.md
   tr: tr/mission.md
   vi: vi/mission.md
-  zh: zh/mission.md
+  zh-Hans: zh-Hans/mission.md
 - 
   de: de/more-01
   en: en/more-01
@@ -244,7 +244,7 @@
   pt: pt/more-01
   tr: tr/more-01
   vi: vi/more-01
-  zh: zh/more-01
+  zh-Hans: zh-Hans/more-01
 -
   de: de/more-02
   en: en/more-02
@@ -254,7 +254,7 @@
   pt: pt/more-02
   tr: tr/more-02
   vi: vi/more-02
-  zh: zh/more-02
+  zh-Hans: zh-Hans/more-02
 -
   de: de/more-03
   en: en/more-03
@@ -264,7 +264,7 @@
   pt: pt/more-03
   tr: tr/more-03
   vi: vi/more-03
-  zh: zh/more-03
+  zh-Hans: zh-Hans/more-03
 -
   de: de/more-04
   en: en/more-04
@@ -274,7 +274,7 @@
   pt: pt/more-04
   tr: tr/more-04
   vi: vi/more-04
-  zh: zh/more-04
+  zh-Hans: zh-Hans/more-04
 -
   de: de/more-05
   en: en/more-05
@@ -284,7 +284,7 @@
   pt: pt/more-05
   tr: tr/more-05
   vi: vi/more-05
-  zh: zh/more-05
+  zh-Hans: zh-Hans/more-05
 -
   de: de/more-06
   en: en/more-06
@@ -294,7 +294,7 @@
   pt: pt/more-06
   tr: tr/more-06
   vi: vi/more-06
-  zh: zh/more-06
+  zh-Hans: zh-Hans/more-06
 -
   de: de/more-07
   en: en/more-07
@@ -304,7 +304,7 @@
   pt: pt/more-07
   tr: tr/more-07
   vi: vi/more-07
-  zh: zh/more-07
+  zh-Hans: zh-Hans/more-07
 -
   de: de/more-08
   en: en/more-08
@@ -314,7 +314,7 @@
   pt: pt/more-08
   tr: tr/more-08
   vi: vi/more-08
-  zh: zh/more-08
+  zh-Hans: zh-Hans/more-08
 -
   de: de/more-09
   en: en/more-09
@@ -324,7 +324,7 @@
   pt: pt/more-09
   tr: tr/more-09
   vi: vi/more-09
-  zh: zh/more-09
+  zh-Hans: zh-Hans/more-09
 -
   de: de/more-10
   en: en/more-10
@@ -334,7 +334,7 @@
   pt: pt/more-10
   tr: tr/more-10
   vi: vi/more-10
-  zh: zh/more-10
+  zh-Hans: zh-Hans/more-10
 -
   de: de/more-11
   en: en/more-11
@@ -344,7 +344,7 @@
   pt: pt/more-11
   tr: tr/more-11
   vi: vi/more-11
-  zh: zh/more-11
+  zh-Hans: zh-Hans/more-11
 -
   de: de/more-12
   en: en/more-12
@@ -354,7 +354,7 @@
   pt: pt/more-12
   tr: tr/more-12
   vi: vi/more-12
-  zh: zh/more-12
+  zh-Hans: zh-Hans/more-12
 -
   de: de/more-13
   en: en/more-13
@@ -364,7 +364,7 @@
   pt: pt/more-13
   tr: tr/more-13
   vi: vi/more-13
-  zh: zh/more-13
+  zh-Hans: zh-Hans/more-13
 -
   de: de/more-14
   en: en/more-14
@@ -374,7 +374,7 @@
   pt: pt/more-14
   tr: tr/more-14
   vi: vi/more-14
-  zh: zh/more-14
+  zh-Hans: zh-Hans/more-14
 -
   de: de/more-15
   en: en/more-15
@@ -384,7 +384,7 @@
   pt: pt/more-15
   tr: tr/more-15
   vi: vi/more-15
-  zh: zh/more-15
+  zh-Hans: zh-Hans/more-15
 -
   de: de/more-16
   en: en/more-16
@@ -394,5 +394,4 @@
   pt: pt/more-16
   tr: tr/more-16
   vi: vi/more-16
-  zh: zh/more-16
-
+  zh-Hans: zh-Hans/more-16

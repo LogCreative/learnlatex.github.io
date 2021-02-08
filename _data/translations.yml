@@ -15,7 +15,7 @@ change-language:
   pt: "Leia esta página em um idioma diferente"
   tr: "Bu sayfayı farklı bir dilde görüntüle"
   vi: "Đọc trang này trong một ngôn ngữ khác"
-  zh: "Missing"
+  zh-Hans: "以另一种语言阅读本文"
 skip-link:
   de: "Zum Hauptinhalt springen"
   en: "Skip to main content"
@@ -25,7 +25,7 @@ skip-link:
   pt: "Ir para o conteúdo principal"
   tr: "İçeriğe atla"
   vi: "Chuyển đến nội dung chính"
-  zh: "Missing"
+  zh-Hans: "跳转至正文"
 heading_meta:
   de: "Meta"
   en: "Meta"
@@ -35,7 +35,7 @@ heading_meta:
   pt: "Meta"
   tr: "Meta"
   vi: "Meta"
-  zh: "Missing"
+  zh-Hans: "Meta"
 heading_navigation:
   de: "Navigation"
   en: "Navigation"
@@ -45,7 +45,7 @@ heading_navigation:
   pt: "Navegação"
   tr: "Site Haritası"
   vi: "Điều hướng"
-  zh: "Missing"
+  zh-Hans: "导航"
 heading_planet:
   de: "Planet"
   en: "Planet"
@@ -55,7 +55,7 @@ heading_planet:
   pt: "Planeta"
   tr: "Alakalı Sayfalar"
   vi: "Liên kết ngoài"
-  zh: "Missing"
+  zh-Hans: "Planet"
 informational-elements_lesson:
   de: "Lektion"
   en: "Lesson"
@@ -65,7 +65,7 @@ informational-elements_lesson:
   pt: "Lição"
   tr: "Ders"
   vi: "Bài học"
-  zh: "課"
+  zh-Hans: "课"
 informational-elements_search:
   de: "Suche"
   en: "Search"
@@ -75,7 +75,7 @@ informational-elements_search:
   pt: "Pesquisa"
   tr: "Arama"
   vi: "Tìm kiếm"
-  zh: "搜索"
+  zh-Hans: "搜索"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"
@@ -85,7 +85,7 @@ navigational-elements_home:
   pt: "Pagina inicial"
   tr: "Ana Sayfa"
   vi: "Trang chủ"
-  zh: "Missing"
+  zh-Hans: "主页"
 navigational-elements_mission:
   de: "Mission"
   en: "Mission"
@@ -95,7 +95,7 @@ navigational-elements_mission:
   pt: "Missão"
   tr: "Amaç"
   vi: "Sứ mệnh"
-  zh: "Missing"
+  zh-Hans: "任务"
 navigational-elements_help:
   de: "Hilfe"
   en: "Help"
@@ -105,7 +105,7 @@ navigational-elements_help:
   pt: "Ajuda"
   tr: "Yardım"
   vi: "Hỗ trợ"
-  zh: "救命"
+  zh-Hans: "帮助"
 navigational-elements_contact:
   de: "Kontakt"
   en: "Contact"
@@ -115,7 +115,7 @@ navigational-elements_contact:
   pt: "Contato"
   tr: "İletişim"
   vi: "Liên hệ"
-  zh: "Missing"
+  zh-Hans: "联系"
 navigational-elements_licenses:
   de: "Lizenzen"
   en: "Licenses"
@@ -125,7 +125,7 @@ navigational-elements_licenses:
   pt: "Licenças"
   tr: "Lisanslar"
   vi: "Giấy phép"
-  zh: "執照"
+  zh-Hans: "许可证"
 navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
@@ -135,7 +135,7 @@ navigational-elements_open-an-issue:
   pt: "Abra um problema"
   tr: "Problem bildir"
   vi: "Báo lỗi"
-  zh: "Missing"
+  zh-Hans: "问题反馈"
 navigational-elements_page-source:
   de: "Seitenquelltext"
   en: "Page source"
@@ -145,7 +145,7 @@ navigational-elements_page-source:
   pt: "Fonte da página"
   tr: "Sayfa kaynağı"
   vi: "Nguồn trang"
-  zh: "Missing"
+  zh-Hans: "页面源文件"
 navigational-elements_more:
   de: "Mehr zu diesem Thema"
   en: "More on this topic"
@@ -155,7 +155,7 @@ navigational-elements_more:
   pt: "Mais sobre este tópico"
   tr: "Daha fazla detay…"
   vi: "Xem bài bổ sung của bài này"
-  zh: "有關此主題的更多信息"
+  zh-Hans: "有关此主题的更多信息"
 navigational-elements_next:
   de: "Nächste Lektion"
   en: "Next lesson"
@@ -165,7 +165,7 @@ navigational-elements_next:
   pt: "Próxima lição"
   tr: "Sonraki ders"
   vi: "Bài tiếp theo"
-  zh: "Missing"
+  zh-Hans: "下一课"
 navigational-elements_nextmain:
   de: "Nächste Hauptlektion"
   en: "Next main lesson"
@@ -175,7 +175,7 @@ navigational-elements_nextmain:
   pt: "Próxima lição principal"
   tr: "Bir sonraki ana ders"
   vi: "Bài chính tiếp theo"
-  zh: "Missing"
+  zh-Hans: "下一主干课程"
 navigational-elements_return:
   de: "Zurück zur Hauptlektion"
   en: "Return to main lesson"
@@ -185,7 +185,7 @@ navigational-elements_return:
   pt: "Retornar à lição principal"
   tr: "Derse dön"
   vi: "Quay trở lại bài chính"
-  zh: "Missing"
+  zh-Hans: "返回主干课程"
 navigational-elements_toc:
   de: "Inhaltsverzeichnis"
   en: "Table of Contents"
@@ -195,4 +195,4 @@ navigational-elements_toc:
   pt: "Índice"
   tr: "Konu Başlıkları"
   vi: "Mục lục"
-  zh: "目錄"
+  zh-Hans: "目录"

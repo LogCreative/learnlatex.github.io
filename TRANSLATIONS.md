@@ -64,7 +64,7 @@ pages.
      pt: "Próxima lição"
      tr: "Next lesson"
      vi: "Bài tiếp theo"
-     zh: "Missing"
+     zh-Hans: "下一课"
      zz: "YOUR TRANSLATION HERE"
    ```
    
