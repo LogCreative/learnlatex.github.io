@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "查看说明文档并获取帮助"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
+toc-anchor-text: "帮助与文档"
+toc-description: "查看说明文档并获取帮助。"
 ---
 
 # 查看说明文档并获取帮助

@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "交叉引用"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
+toc-anchor-text: "交叉引用"
+toc-description: "引用图片、表格等。"
 ---
 
 # 交叉引用

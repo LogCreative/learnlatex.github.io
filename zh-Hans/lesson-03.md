@@ -3,14 +3,14 @@ layout: "lesson"
 lang: "zh-Hans"
 title: "LaTeX 文档基本结构"
 description: "本课展示了 LaTeX 文档的基本结构，以及如何将其构建为一个PDF文件，还有用于控制 LaTeX 的主要特殊字符。"
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+toc-anchor-text: "文档结构"
+toc-description: "文档的基本结构。"
 ---
 
-# LaTeX 文档基础结构
+# LaTeX 文档基本结构
 
 <span
-  class="summary">本课展示了LaTeX文档的基本结构，以及如何将其构建成一个PDF文件，还有用于控制LaTeX的主要特殊字符。</span>
+  class="summary">本课展示了 LaTeX 文档的基本结构，以及如何将其构建成一个 PDF 文件，还有用于控制 LaTeX 的主要特殊字符。</span>
 
 你的第一个 LaTeX 文档将非常简单：目的是向你展示一个文档的外观和如何成功排版。这也是你第一次看到 [如何使用](help) `learnlatex.org` 上的例子的机会。
 

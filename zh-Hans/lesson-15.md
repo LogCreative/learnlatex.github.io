@@ -1,11 +1,15 @@
 ---
 layout: "lesson"
 lang: "zh-Hans"
-title: "Dealing with errors (Chinese)"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "处理错误"
+description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
+toc-anchor-text: "处理错误"
+toc-description: "应对预料之外的行为。"
 ---
 
-# Dealing with errors (Chinese)
+# 处理错误
+
+<span
+  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
 
 Translation to be added _after_ English text completed.

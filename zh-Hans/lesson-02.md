@@ -2,18 +2,22 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "让 LaTeX 跑起来"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "本节课解释了什么是 TeX 系统、哪些是最常用的，还列出了一些可与 LaTeX 一起使用的文本编辑器，以及集成有编辑器的在线系统。"
+toc-anchor-text: "让 LaTeX 跑起来"
+toc-description: "TeX 系统与 LaTeX 编辑器。"
 ---
 
-# Working with LaTeX (Chinese)
+# 让 LaTeX 跑起来
+
+<span
+  class="summary">本节课解释了什么是 TeX 系统、哪些是最常用的，还列出了一些可与 LaTeX 一起使用的文本编辑器，以及集成有编辑器的在线系统。</span>
 
 与很多软件不同，LaTeX 并不是一个把「全部家当」打包起来的单独应用。相反，它是由一系列程序组成的复杂系统。通常来说，LaTeX 所需的程序可以分为两个部分：
 
 - TeX 发行版
 - 文本编辑器（常常是专门为 LaTeX 设计的）
 
-## {{ site.tex }} 发行版
+## TeX 发行版
 
 要让 LaTeX 跑起来，核心就是要有一套 TeX 发行版。TeX 发行版是 LaTeX 工作所需的一组「后台」程序和文件，但是大多数情况下，并不需要直接「运行」它们。
 

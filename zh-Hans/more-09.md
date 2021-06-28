@@ -1,7 +1,9 @@
 ---
 layout: "lesson"
 lang: "zh-Hans"
-title: "更多: 交叉引用"
+title: "更多：交叉引用"
+description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
+toc-anchor-text: "更多：交叉引用"
 ---
 
 ## 为交叉引用添加链接

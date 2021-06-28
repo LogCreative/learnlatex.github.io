@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "zh-Hans"
-title: 通过 16 篇初学者友好的教程在线免费学习 LaTeX
+title: 免费在线学习 LaTeX
 description: "通过 16 篇初学者友好的教程学习 LaTeX。迈出学习 LaTeX——一个用以排版高质量作品的文档准备系统——的第一步。"
 permalink: /zh-Hans/
 ---
