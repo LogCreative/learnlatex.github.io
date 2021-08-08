@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "逻辑结构"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
+description: "本课展示了一些基础的格式化命令，并将其与含有节次命令和列表的语义格式化进行比较。"
 toc-anchor-text: "逻辑结构"
 toc-description: "结构与视觉呈现。"
 ---
@@ -10,18 +10,13 @@ toc-description: "结构与视觉呈现。"
 # 逻辑结构
 
 <span
-  class="summary">本课展示了一些基础的格式化命令，并将其和带有节次化命令列表的语义格式化进行比较。</span>
+  class="summary">本课展示了一些基础的格式化命令，并将其与含有节次命令和列表的语义格式化进行比较。</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX 不仅提供了专注于文档逻辑结构的方式，也提供了直接修改外观的方式。大部分情况下，最好使用关注于结构的方式，这样迫不得已的时候就能容易地复用或更改外观。
 
-## Structure and visual presentation
+## 结构与视觉呈现
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+我们从一个例子开始，展示 LaTeX 中最常见的逻辑标记命令之一——`\emph`：将某文段变成斜体。（为了强调印刷界经常这么做。）
 
 ```latex
 \documentclass{article}
@@ -33,15 +28,9 @@ Some text in \textit{italic and \textit{nested} content}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+您或许猜得到 `\textit` 能够让文段变成斜体但是只能变成斜体，而对于嵌套的情况不奏效；并且可以看到 `\emph` 能够嵌套使用。当然，也有强调的格式并不是斜体的情况：比如在幻灯片中，使用颜色来强调是一种更好的方式。使用逻辑标记方法我们就不用担心编写文档主体时在格式设定上的细节问题。
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+我们会稍后看到 [手动格式化](lesson-11) 的相关内容，现在我们为这一段增加一个已知的 `\textbf` 命令：让文段变粗的命令。
 
 ## Sectioning commands
 
@@ -83,8 +72,8 @@ the next lesson](lesson-05).
 
 LaTeX can divide up documents into quite a few levels
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+- `\chapter` (启用它需要 `\documentclass{book}` 或者
+  `\documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`
