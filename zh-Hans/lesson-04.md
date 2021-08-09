@@ -73,12 +73,11 @@ LaTeX 可以将文档分成好几个层级：
 
 我们可以说的更多一点，下一个层级就是 `\paragraph`，但是基本上这一层会对节次划分得过多。（没错，`\paragraph` 是一个节次命令，而 _不是_ 开始新段落的命令！）
 
-你可能在想对于文档标题该怎么做。确实有一些特殊的命令来声明一个文档的标题，但并不是所有的文档都会使用它，所以我们把这个知识放在了对应的 [拓展课程](lesson-04) 中。
+您可能在想对于文档标题该怎么做。确实有一些特殊的命令来声明一个文档的标题，但并不是所有的文档都会使用它，所以我们把这个知识放在了对应的 [拓展课程](lesson-04) 中。
 
-## Lists
+## 列表
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+还有一种很常见的使用逻辑标记的情况就是撰写列表。LaTeX 主要内置两种常见的列表类型。
 
 ```latex
 \documentclass{article}
@@ -102,8 +101,7 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+注意到我们使用 `\item` 来开始每一项，这样每一种列表中使用的标记或编号就会被自动增加。
 
 ## Exercises
 
