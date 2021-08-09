@@ -32,14 +32,9 @@ Some text in \textit{italic and \textit{nested} content}.
 
 我们会稍后看到 [手动格式化](lesson-11) 的相关内容，现在我们为这一段增加一个已知的 `\textbf` 命令：让文段变粗的命令。
 
-## Sectioning commands
+## 节次命令
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+或许你使用过字处理器：为了开始一节，多数人的习惯是输入标题文字然后简单地让它变大、变粗，换行继续。在 LaTeX 中用逻辑标记方式比这种手动格式化实际上更容易：我们可以使用 `\section` 命令。它可以直接控制字体变化、纵向间距等等，并且可以让整个文章的格式统一。
 
 ```latex
 \documentclass{article}
@@ -66,11 +61,9 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+使用标准的 `article` 配置，LaTeX 会对节与小节进行标号，并把标题加粗。我们会在 [下一节](lesson-05) 对改变这种设计进行适当的讲述。
 
-LaTeX can divide up documents into quite a few levels
+LaTeX 可以将文档分成好几个层级：
 
 - `\chapter` (启用它需要 `\documentclass{book}` 或者
   `\documentclass{report}`)
@@ -78,13 +71,9 @@ LaTeX can divide up documents into quite a few levels
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+我们可以说的更多一点，下一个层级就是 `\paragraph`，但是基本上这一层会对节次划分得过多。（没错，`\paragraph` 是一个节次命令，而 _不是_ 开始新段落的命令！）
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+你可能在想对于文档标题该怎么做。确实有一些特殊的命令来声明一个文档的标题，但并不是所有的文档都会使用它，所以我们把这个知识放在了对应的 [拓展课程](lesson-04) 中。
 
 ## Lists
 
