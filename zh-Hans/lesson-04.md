@@ -103,13 +103,8 @@ Unordered
 
 注意到我们使用 `\item` 来开始每一项，这样每一种列表中使用的标记或编号就会被自动增加。
 
-## Exercises
+## 练习
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+对不同的节次层级进行实验。尝试使用 `\documentclass{report}` 而不是 `\documentclass{article}`，并增加 `\chapter` 命令。现在看起来怎么样？尝试 `\paragraph` （甚至是） `\subparagraph` 来看看这两个命令是怎么工作的：一般情况下，它们并不会增加编号。
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+制作更多的列表，并在一个列表中嵌套另一个列表。编号和标记的格式是怎么变化的？你至多可以在标准的 LaTeX 中嵌套四层，而多于四层的嵌套列表一般是一个不好的信号！
