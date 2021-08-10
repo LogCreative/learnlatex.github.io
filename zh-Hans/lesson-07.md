@@ -28,15 +28,15 @@ is an imported PDF.
 \end{document}
 ```
 
-您可以添加 EPS, PNG, JPG 以及 PDF 文件。如果您有多于一种后缀的同名图像，那么可以这么编码，`example-image.png`。（如果您没有指定后缀的话，`graphicx` 宏包会尝试猜测出后缀名。）
+您可以添加 EPS, PNG, JPG 以及 PDF 文档。如果您有多于一种后缀的同名图像，那么可以写成 `example-image.png`。（如果您没有指定后缀的话，`graphicx` 宏包会尝试猜测出后缀名。）
 
-您或许注意到我们在这儿使用了一个新的环境：`center`，它用来将图片在页面中水平居中。[稍后](lesson-11)，我们会讨论更多关于间隔和定位的内容。
+您或许注意到在这儿我们使用了一个新的环境：`center`，它用来将图片在页面中水平居中。[稍后](lesson-11)，我们会讨论更多关于间隔和定位的内容。
 
 ## 更改图片外观
 
-`\includegraphics` 命令为调整图片大小和形状、裁切图片提供了许多选项。其中还是有一些是很常用的，所以您可能需要稍微关注一下。
+`\includegraphics` 命令为调整图片大小和形状、裁切图片提供了许多选项。其中有些选项是很常用的，需要稍微关注一下。
 
-最常见的就是设定一个图片的宽度和高度，通常被设定为 `\textwidth`/`\linewidth` 和 `\textheight` 的相对值。这里 `\textwidth` 和 `\linewidth` 之间的差别是很微妙的，并且通常是相同的。`\textwidth` 是一整页中的文本区域宽度，而 `\linewidth` 是当前行的宽度会因为不同的行而不同（当启用文档类中的 `twocolumn` 选项时这种差别会非常明显）。LaTeX 会自动缩放图片以保持正确的宽高比例。
+最常见的就是设定一个图片的宽度和高度，通常被设定为 `\textwidth`（或 `\linewidth`） 和 `\textheight` 的相对值。这里 `\textwidth` 和 `\linewidth` 之间的差别是很微妙的，并且通常是相同的。`\textwidth` 是一整页中的文本区域宽度，而 `\linewidth` 是当前行的宽度，会因为不同的行而不同（当启用文档类中的 `twocolumn` 选项时这种差别会非常明显）。LaTeX 会自动缩放图片以保持正确的宽高比例。
 
 ```latex
 \documentclass{article}
@@ -92,7 +92,7 @@ Test location.
 \end{document}
 ```
 
-这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是浮动体可以在原来的地方（`Test location` 旁边）或者是一页的顶部。您可以最多使用四种位置描述符（position specifiers）：
+这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是浮动体可以在原来的地方（`Test location` 旁边）或者是一页的顶部。您最多可以使用四种位置描述符（position specifier）：
 
 - `h` Here 这里（如果可行）
 - `t` Top 页面顶部
@@ -111,4 +111,4 @@ Test location.
 
 使用 `width` 来设定一张图片为 `\textwidth` 的相对值、一张图片为 `\linewidth` 的相对值。在包含 `twocolumn` 选项与否的情况下，尝试观察图片的变化。
 
-使用 `lipsum` 来创建相当长的假文，然后尝试将浮动体设定为不同的位置描述符。不同的描述符之间是怎么相互影响的？
+使用 `lipsum` 来创建相当长的假文，然后尝试将浮动体设定为不同的位置描述符。不同描述符之间是怎么相互影响的？
