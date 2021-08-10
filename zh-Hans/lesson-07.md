@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "插图与定位"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
+description: "本课展示了如何向您的文档中添加插图、如何改变他们的外观以及如何在 PDF 中自动定位或浮动这些插图。"
 toc-anchor-text: "插图"
 toc-description: "图片的外观和位置。"
 ---
@@ -10,10 +10,9 @@ toc-description: "图片的外观和位置。"
 ## 插图与定位
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
+  class="summary">本课展示了如何向您的文档中添加插图、如何改变他们的外观以及如何自动定位或浮动这些插图。</span>
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+为了向 LaTeX 中插入外部来源的图片，使用 `graphicx` 宏包以向 LaTeX 中添加 `\includegraphics` 命令。
 
 ```latex
 \documentclass{article}
@@ -29,29 +28,15 @@ is an imported PDF.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+您可以添加 EPS, PNG, JPG 以及 PDF 文件。如果您有多于一种后缀的同名图像，那么可以这么编码，`example-image.png`。（如果您没有指定后缀的话，`graphicx` 宏包会尝试猜测出后缀名。）
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+您或许注意到我们在这儿使用了一个新的环境：`center`，它用来将图片在页面中水平居中。[稍后](lesson-11)，我们会讨论更多关于间隔和定位的内容。
 
-## Altering graphic appearance
+## 更改图片外观
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+`\includegraphics` 命令为调整图片大小和形状、裁切图片提供了许多选项。其中还是有一些是很常用的，所以您可能需要稍微关注一下。
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+最常见的就是设定一个图片的宽度和高度，通常被设定为 `\textwidth`/`\linewidth` 和 `\textheight` 的相对值。这里 `\textwidth` 和 `\linewidth` 之间的差别是很微妙的，并且通常是相同的。`\textwidth` 是一整页中的文本区域宽度，而 `\linewidth` 是当前行的宽度会因为不同的行而不同（当启用文档类中的 `twocolumn` 选项时这种差别会非常明显）。LaTeX 会自动缩放图片以保持正确的宽高比例。
 
 ```latex
 \documentclass{article}
@@ -69,8 +54,7 @@ Some text
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+您也可以尝试采用 `scale` 命令缩放图片，或者指定 `angle` 角度以旋转图片，亦或通过 `clip` 和 `trim` 裁切图片。
 
 ```latex
 \documentclass{article}
@@ -84,21 +68,18 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## 浮动图片
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+传统排版业，特别是技术文档的排版，图片可能会移动到文档中的其他位置上。这通常被称为 *浮动*（float）。图片通常会被设定为浮动体以至于页面中不会有大面积的留白。
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % 产生填充假文
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % 只是一些填充文段
 
 Test location.
 \begin{figure}[ht]
@@ -107,42 +88,27 @@ Test location.
   \caption{An example image}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % 只是一些填充文段
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是浮动体可以在原来的地方（`Test location` 旁边）或者是一页的顶部。您可以最多使用四种位置描述符（position specifiers）：
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` Here 这里（如果可行）
+- `t` Top 页面顶部
+- `b` Bottom 页面底部
+- `p` Page 浮动体专页
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[稍后](lesson-09)，我们会了解该如何交叉引用浮动体以在文段中产生指向它们的链接。
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+您或许注意到了我们使用 `\centering` 而不是采用 `center` 环境来居中图片。如果需要水平居中内容，使用 `\centering` 将会避免浮动环境和 `center` 环境都会增加纵向间隔的局面。
 
-## Exercises
+## 练习
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+尝试替代例子中的标准图片，插入您创建的一张图片。
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+探索 `height`, `width`, `angle` 和 `scale` 可以做到什么。
 
-Use the `width` key to set the size of a graphic relative to `\textwidth` and
-another graphic relative to `\linewidth`. Try out how they behave with or
-without the `twocolumn` option.
+使用 `width` 来设定一张图片为 `\textwidth` 的相对值、一张图片为 `\linewidth` 的相对值。在包含 `twocolumn` 选项与否的情况下，尝试观察图片的变化。
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+使用 `lipsum` 来创建相当长的假文，然后尝试将浮动体设定为不同的位置描述符。不同的描述符之间是怎么相互影响的？
