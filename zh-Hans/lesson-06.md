@@ -46,7 +46,7 @@ material, and which will be able to give us at least one hyphenation point.
 
 ## 改变设计
 
-调整某些独立于文档类方面上的设计通常是有用的。最常见的是更改页边距。我们刚刚就在上面的例子中使用了 `geometry` 宏包。我们现在再来看一个专门关于页边距的例子。
+调整某些独立于文档类方面上的设计通常是有用的。最常见的是更改页边距。刚刚就在上面的例子中使用了 `geometry` 宏包，现在再来看一个专门关于页边距的例子。
 
 ```latex
 \documentclass{book}
@@ -82,7 +82,7 @@ Text of the second section.
 \end{document}
 ```
 
-和不加载 `geometry` 宏包相对比，你应该能够看到其效用。
+和不加载 `geometry` 宏包相对比，您应该能够看到其效用。
 
 ## 添加新功能
 
@@ -134,6 +134,6 @@ Something about \kw{apples} and \kw{oranges}.
 
 尝试更改 `geometry` 例子中的页边距。您可以通过一个逗号分隔列表来单独地设定 `top`, `bottom`, `left`, `right` 四种边距。
 
-尝试加载 `lipsum` 宏包以向您的文档中添加 `\lipsum` 命令。您是否能猜出为什么对于制作例子来说这个宏包特别有用？
+尝试加载 `lipsum` 宏包以向您的文档中添加 `\lipsum` 命令。您是否能猜出为什么对于制作例子来说这个宏包特别有用？（译者注：可以使用 `zhlipsum` 宏包，并通过 `\zhlipsum` 命令生成中文假文）
 
 尝试改变 `\kw` 的定义以实现一种不同的格式。
