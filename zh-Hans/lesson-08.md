@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "表格"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
+description: "本课展示了如何在 LaTeX 中构建表格、改变单元格中的对齐选项、对表格添加分割线以及合并单元格。"
 toc-anchor-text: "LaTeX 表格"
 toc-description: "表格的基本用法。"
 ---
@@ -10,67 +10,50 @@ toc-description: "表格的基本用法。"
 # 表格
 
 <span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+  class="summary">本课展示了如何在 LaTeX 中构建表格、改变单元格中的对齐选项、对表格添加分割线以及合并单元格。</span>
 
-
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+在 LaTeX 中使用 `tabular` 环境构建表格。本课会假设您已经加载了 `array` 宏包以向 LaTeX 表格添加更多的功能（这些功能因为一些历史原因没有被内置在 LaTeX 内核中）。所以在导言区添加下述代码即可继续操作：
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+为了排版 `tabular` 表格，我们需要告诉 LaTeX 共计多少列并且应当怎样对齐。这通常通过一个额外的参数——通常被称为表格导言（table preamble）——来指定 `tabular` 列数。列通常通过单个字母（被称为引导符，preamble-token）指定。可选的列格式如下：
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
+| 类型       | 描述 |
 | ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| `l`        | 列左对齐 |
+| `c`        | 列居中对齐 |
+| `r`        | 列右对齐 |
+| `p{width}` | 固定列宽；文字会被自动折行并两端对齐 |
+| `m{width}` | 和 `p` 类似，但垂直居中对齐 |
+| `b{width}` | 和 `p` 类似，但垂直底部对齐 |
+| `w{align}{width}` | 固定列宽，如果太长会稍稍出界。您可以选择水平居中选项 `l`, `c` 或 `r` |
+| `W{align}{width}` | 和 `w` 类似, 但是如果出界的话会收到警告 |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+另外，还有一些其他的导言符不定义列但也很有用：
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| 类型 | 描述 |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{num}{string}` | 在表格导言中重复 `string` 引导符 `num` 次。您可以通过这种方式定义相同的列 |
+| `>{decl}` | 在当前列的每个单元格前都会添加 `decl`（很有用，比如需要对整列设定一个不同的字体时） |
+| `<{decl}` | 会在前一列的每个单元格后添加 `decl` |
+| <span>`|`</span>  | 添加纵向分割线 |
+| `@{decl}` | 将两列之间的空隙替换为 `decl` |
+| `!{decl}` | 在两列之间的空隙中央添加 `decl` |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+这两个表列出了 LaTeX 和 `array` 宏包中所有的列类型。一些从其他宏包中提供的额外列类型，会在 [进一步的细节页面] 给出。
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+被 `l`, `c`, `r` 标识的列将会根据最宽的单元格决定自然的列宽度。每一列都需要被声明。如果需要三个居中列，您可以在表格导言使用 `ccc`，当然，因为空格会被忽略掉，`c c c` 也是一样的。
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+表格主体中，列都是通过 `&` 和号来分隔的，行是通过 `\\` 来另起的。
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+我们已经了解了制作第一个表格所需要的所有知识。下面的代码中 `&` 和 `\\` 是对齐的，这在 LaTeX 中并不是必要的，但是可以让源代码更易读。
 
 <!-- {% raw %} -->
 ```latex
@@ -90,8 +73,7 @@ source.
 
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+如果一个表格列包含了太多的文字，仅使用 `l`, `c` 和 `r` 的话您可能会遇到麻烦。可以观察下面的例子里发生了什么：
 
 <!-- {% raw %} -->
 
@@ -115,12 +97,7 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+造成这个问题的原因是 `l` 类型的列将一行里所有的内容排版成一行，即使已经超出了页面的范围。解决它您可以采用 `p` 类型。这种类型会将内容排版为指定宽度的段落，垂直顶部居中——您大部分时间需要的排版方式。将上一个结果与下面的结果比较一下：
 
 <!-- {% raw %} -->
 ```latex
@@ -143,11 +120,7 @@ time. Compare the above outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+如果您的表格里有太多列是同样的类型，向表格导言重复的写入大量描述符就太麻烦了。您可以通过使用 `*{num}{string}` 让事情变得简单一些，这将让 `string` 格式描述符重复 `num` 次。所以 `*{6}{c}` 和 `cccccc` 是等价的。为了展示这一点，下面就是对上面例子用新学的语法重写后的样子：
 
 <!-- {% raw %} -->
 ```latex
@@ -166,19 +139,11 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## 添加行分割线
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+在介绍分割线之前，先提一个建议：表格中应当少用分割线，而且纵向分割线看起来一般不专业。事实上，在专业表格中您不能够使用任何标准分割线；取而代之的，您应该熟练使用 `booktabs` 宏包里提供的设计，所以在这里我们先讨论它。为了完整性，我们将标准分割线的相关内容放在了 [进一步的细节页面](more-08)。 
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` 提供了四种不同的分割线。每一种命令都需要在每一行之前或者在一个分割线之后使用。三种分割线命令是：`\toprule`, `\midrule`, `\bottomrule`。顾名思义，您应该清楚这些分割线放在哪儿：
 
 <!-- {% raw %} -->
 ```latex
@@ -202,11 +167,7 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+第四种 `booktabs` 提供的分割线命令是 `\cmidrule`，可以用来绘制出仅占用指定的列范围、而不占满整行的分割线。列范围需要用一个数字范围指定：`{`_列号_`-`_列号_`}`。即使您只需要对一列画分割线也需要被指定为一个范围（范围的两端列号相同）。
 
 <!-- {% raw %} -->
 ```latex
@@ -232,8 +193,7 @@ column you need to specify that as a range (with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+`\cmidrule` 还有需要其他有用的功能。您可以在括号内指定对应描述符以缩短分割线的两端。
 
 <!-- {% raw %} -->
 ```latex
@@ -260,12 +220,9 @@ with an optional argument enclosed in parentheses:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+您可能猜到了 `r` 和 `l` 的意思是分割线分别缩短**右**端和**左**端。
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+有时，一条分割线可能对于分割两行来说还是太多了，您可能希望通过其他方式将两行更清晰地分隔开。在这种情况下，您可以使用 `\addlinespace` 来插入一个小的间隙。
 
 <!-- {% raw %} -->
 ```latex
@@ -294,18 +251,15 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## 合并单元格
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+在 LaTeX 中您可以通过 `\mutlicolumn` 命令水平合并两个单元格，如果需要使用这个命令，必须在书写单元格内容前使用。`\mutlicolumn` 接受三个参数：
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. 需要合并多少个单元格
+2. 合并后单元格的对齐方式
+3. 合并后单元格的内容
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+对齐方式可以使用 `tabular` 中定义的任何方式，但是只能是 _一列_ 所对应的方式（不能是多列）。
 
 <!-- {% raw %} -->
 ```latex
@@ -330,11 +284,7 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+您也可以在单个单元格上使用 `\multicolumn` 来屏蔽表格导言中对该列的定义。下面的使用方法居中了表头：
 
 <!-- {% raw %} -->
 ```latex
@@ -359,9 +309,7 @@ table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+LaTeX 中不支持纵向单元格的合并。通常通过将单元格留空的方式，告诉读者单元格是跨行的。
 
 <!-- {% raw %} -->
 ```latex
@@ -394,9 +342,6 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## 练习
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+使用简单的例子来开始试验表格的功能。尝试不同的 `l`, `c` 和 `r` 列对齐描述符。一行中内容太少会发生什么？太多呢？尝试使用 `\multicolumn` 命令产生跨列单元格。
