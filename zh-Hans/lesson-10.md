@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "数学公式"
-description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
+description: "本课展示了 LaTeX 的数学模式、如何通过 `amsmath` 宏包排版行内和行间公式、以及如何改变数学模式中的字体。"
 toc-anchor-text: "数学公式"
 toc-description: "数学模式和记号。"
 ---
@@ -10,20 +10,18 @@ toc-description: "数学模式和记号。"
 # 数学公式
 
 <span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+  class="summary">本课展示了 LaTeX 的数学模式、如何通过 `amsmath` 宏包排版行内和行间公式、以及如何改变数学模式中的字体。</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
-can mark up mathematics in a logical way in what is known as 'math mode'.
+排版复杂的数学公式是 LaTeX 最重要的优势之一。您可以在“数学模式”下通过逻辑标记的方式编写数学公式。
 
-## Math mode
+## 数学模式
 
-In math mode, spaces are ignored and the correct spacing between characters is
-(almost always) applied.
+在数学模式下，空格会被省略，字符间（基本上）都会有恰当的空格。
 
-There are two forms of math mode:
+数学模式有两种形式：
 
-* inline
-* display
+* 行内公式
+* 行间公式
 
 ```latex
 \documentclass{article}
@@ -41,38 +39,20 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+您或许在其他地方看到了类似 LaTeX 的数学公式输入系统。比如，可以向网页中放置公式的 MathJax。这些系统通常接受 LaTeX 语法的轻微变种作为输入，因为它们通常不使用 LaTeX 的后端。
 
 <p
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
-another context, it might be because the example is not really using LaTeX.</p>
+  class="hint">我们的例子都使用了 <i>标准的</i> LaTeX 语法。如果您在其他地方看到了一些不同的用法，那么可能只是因为您看到的内容用的实际上不是 LaTeX。</p>
 
-### Inline math mode and mathematical notation
+### 行内数学模式和数学符号
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+由上文可见，行内数学公式是通过一对美元符号（`$...$`）标记的。当然用 `\( ... \)` 标记也是可行的。输入简单表达式不需要任何的特殊标记，您将看到数学公式会被排版出合适的间隔而且文字会变成斜体。
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+行内数学模式限制了表达式的纵向高度以使得数学公式尽可能不打乱段落的行间距。
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+注意到 _所有的_ 数学符号都应当被标记成数学模式下的。即使只是一个字符也应该使用 `... $2$ ...` 而不是 `... 2 ...`。否则，比如说，您需要输入一个负数，然后需要使用数学模式来输入负号，那么 `... $-2$ ...` 可能就会使用了与文本模式下不同的数字字体（这取决于文档类的选择）。相反地，要注意从其他地方复制过来的纯文本可能会导致数学模式的构造，比如用于表示金额的美元符号 `$` 或者是表示文件名的下划线符号 `_`（这些应该被分别标记为 `\$` 和 `\_` 以避免）。
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+我们可以很容易添加上标和下标：分别通过 `^` 和 `_` 标记。
 
 ```latex
 \documentclass{article}
@@ -82,13 +62,9 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
+（您可能会看到一些不使用大括号来包裹简单上标和下标的例子，但是这并不是标准语法而且可能会导致错误。永远记得使用大括号。）
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+LaTeX 里有 _许多_ 专有的数学模式命令。它们中有些很容易，比如 `\sin` 和 `\log` 用来分别表示正弦符号和对数符号，又或 `\theta` 用于表示对应的希腊符号。
 
 ```latex
 \documentclass{article}
@@ -98,29 +74,15 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+我们在这儿不能涉及所有的标准 LaTeX 数学模式命令。但是网上有许多列出标准数学命令的资源。您可以在 [Detexify](https://detexify.kirelabs.org/classify.html) 工具里查阅数学模式中符号的对应命令。
 
+### 行间数学模式
 
-### Display mathematics
+您可以在行间模式中使用与行内模式一样的命令。行间数学模式默认为设置在居中位置而且是为“仍属于该段”的大型公式准备的。注意到行间数学环境不允许在数学模式下结束该段，所以您或许不能够在该模式下的源代码中有空行。
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+段落都应当在行间公式 _之前_ 开始，所以不要在行间数学环境之前留有空行。如果您的数学公式有多行，不要使用多个连续的行间数学环境（这将导致不一致的行间距），而是使用一种多行行间公式环境，比如稍后提及的 `amsmath` 宏包中的 `align` 环境。
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
-
-It's particularly useful for integrations, for example:
+对于积分来说行间公式尤其有用，来看下面的例子：
 
 ```latex
 \documentclass{article}
@@ -133,15 +95,10 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+注意观察这里是如何使用上标和下标设定积分上下限的。
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`.
-Formatting of the differential operator varies: some publishers use an upright
-'d' whilst others use an italic '_d_'. One way to write your source to allow you to
-handle either is to create a command `\diff` that you can adjust as required,
-[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+这里我们手动添加了一个小间隙：`\,`。这将在 `dx` 前添加一个小间隙。微分符号的格式各有差别：一些出版商使用直立的“d”而其他出版商使用斜体的“_d_”。为了适应这两种方式，编写源代码的一种方法就是定义一个 `\diff` 命令，这样你就能够根据需要进行调整，[比如说](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)：
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -155,8 +112,7 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+您经常需要对公式标号，这通常通过 `equation` 环境实现。让我们再次尝试同一个例子：
 
 ```latex
 \documentclass{article}
@@ -169,19 +125,11 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+公式编号将会自动递增，公式旁会有一个数字（就像这个例子一样）或者是加了一个节次号码的前缀，比如 (2.5) 表示是第 2 节的第 5 个公式。设定编号格式是在文档类内进行的就不在这里展开了。
 
+## `amsmath` 宏包
 
-## The `amsmath` package
-
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+数学符号太多了，就意味着 LaTeX 内核里内置的工具并不能提供一切。`amsmath` 宏包拓展了内核以提供更多的方案。[`amsmath` 用户手册](http://texdoc.org/pkg/amsmath) 提供了比本课更多的例子。
 
 ```latex
 \documentclass{article}
@@ -197,17 +145,11 @@ Solve the following recurrence for $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+`align*` 环境会让公式在和号 `&` 处对齐，和表格的用法是一样的。注意我们是如何使用 `\quad` 来添加小间距的以及 `\text` 来向数学模式里添加正常的文字。我们还使用了其他的数学模式命令：二项式 `\binom`。
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+还注意到我们使用了 `\align*` 环境，这让公式没有被编号。大部分的数学环境会默认对公式编号，对于带星号（`*`）的变式关闭了编号功能。
 
-The package also has several other convenient environments, for
-example for matrices.
+宏包还提供了其他几个很方便的环境，比如对于矩阵：
 
 ```latex
 \documentclass{article}
@@ -234,21 +176,18 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## 数学模式的字体
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+和正常文本不同的是，数学模式的字体变化通常表示非常特定的意义。所以它们经常被写做特殊的命令。下面就是你需要的一组命令：
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: 罗马字体（直立体）
+- `\mathit`: 使用普通文本字间隔的斜体
+- `\mathbf`: 粗体
+- `\mathsf`: 衬线字体
+- `\mathtt`: 等宽字体（打字机字体）
+- `\mathbb`: 双重粗体（黑板粗体，由 `amsfonts` 宏包提供）
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+这些命令都需要英文字母作为参数，所以我们如果要写出一个矩阵符号的话：
 
 ```latex
 \documentclass{article}
@@ -258,14 +197,9 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+注意默认情况下数学斜体会让字母产生较大的间距，以至于它们可能会看起来像是一些变量的乘积。这种情况下，使用 `\mathit` 来产生文字斜体。
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+这些数学字体命令 `\math..` 针对数学使用了特殊的字体。有时您可能需要像数学公式中嵌入一个属于外部句子的词，需要当前文段的字体，在这种情况下使用 `\text{...}`（由 `amsmath` 宏包提供）或者是特定的字体比如 `\textrm{..}`。
 
 ```latex
 \documentclass{article}
@@ -280,24 +214,14 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 \end{document}
 ```
 
+如果您需要加粗其他的符号，请见 [进一步的细节页面](more-10)。
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+## 练习
 
-## Exercises
+尝试一些数学模式的基本操作：尝试上面的例子然后在行内和行间数学模式之间切换。您能看到这有什么效果吗？
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+尝试输入其他的大写的和小写的希腊字母。您应该能够猜出来它们的命令名。
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+实验字体切换命令：当嵌套使用的时候会发生什么？
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
-
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+行间公式通常是居中对齐的。尝试向文档类添加选项 `[fleqn]`（向左对齐），然后观察上面的例子，会产生不同的布局。相似地，公式编号通常是向右对齐的。尝试向文档类添加选项 `[leqno]`（编号在左边）。
