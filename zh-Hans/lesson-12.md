@@ -74,11 +74,11 @@ preincludes = {
 这两者之一和 LaTeX 一样需要在不同的编辑器上运行。我们的在线示例有一些后台脚本可以一键完成所有的事宜。
 您的编辑器可能有“一键完成”按钮，否则您可能需要在不同的 LaTeX 文档编译中手动选择 BibTeX 或 Biber。
 
-引用（citation）和文献（reference）的格式是独立于 BibTeX 数据库的，并且被一种名为 `style`（样式）的东西所设定。我们将会看到这些东西在 BibTeX 和 `biblatex` 工作流中有些许差异，但整体思想是一致的：我们可以选择引用显示的方式。
+引用（citation）和参考（reference）的格式是独立于 BibTeX 数据库的，并且被一种名为 `style`（样式）的东西所设定。我们将会看到这些东西在 BibTeX 和 `biblatex` 工作流中有些许差异，但整体思想是一致的：我们可以选择引用显示的方式。
 
 ## 配合 `natbib` 的 BibTeX 工作流
 
-虽然可以在不加载任何宏包的情况下向 LaTeX 文档插入引用，但这毕竟比较受局限。与之相对的，我们将会使用 `natbib` 宏包，这将允许我们创建不同类型的引用并且可以使用许多类型的样式。
+虽然可以在不加载任何宏包的情况下向 LaTeX 文档插入引用，但这毕竟比较局限。与之相对的，我们将会使用 `natbib` 宏包，这将允许我们创建不同类型的引用并且可以使用许多类型的样式。
 
 我们输入上的基本结构如这个例子所示：
 
@@ -103,7 +103,7 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-您可以看到我们通过对应的键名引用了数据库里不同的条目。`natbib` 宏包提供了文本方式和括号方式的引用样式：分别是 `\citet` 和 `\citep`。文献样式是通过 `\bibliographystyle` 这一行选择的：这里我们使用了 `plainnat` 样式。文献实际上是通过 `\bibliography` 这一行插入的，同时也选择了使用的数据库（多个数据库采用逗号分隔数据库名）。
+您可以看到我们通过对应的键名引用了数据库里不同的记录。`natbib` 宏包提供了文本方式和括号方式的引用样式：分别是 `\citet` 和 `\citep`。文献样式是通过 `\bibliographystyle` 这一行选择的：这里我们使用了 `plainnat` 样式。文献实际上是通过 `\bibliography` 这一行插入的，同时也选择了使用的数据库（多个数据库采用逗号分隔数据库名）。
 
 页码引用可以通过一个可选参数添加。如果提供了两个可选参数，那么第一个可选参数就被当作引用前的小标记，第二个可选参数就被当作引用标签后的页码引用。
 
@@ -111,13 +111,13 @@ Together \citep{Graham1995,Thomas2008}
 
 ## `biblatex` 工作流
 
-`biblatex` 宏包和 `natbib` 运转的方式稍有不同，主要体现于在导言区选择数据库并在文档主体打印。为此，有一些新的命令。
+`biblatex` 宏包和 `natbib` 运转的方式稍有不同，主要体现于在导言区选择数据库和在文档正文的打印上。为此，要使用一些新的命令。
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\addbibresource{learnlatex.bib} % 引用文件
 
 \begin{document}
 The mathematics showcase is from \autocite{Graham1995}.
@@ -139,21 +139,21 @@ Together \autocite{Thomas2008,Graham1995}
 
 再次地，引用前后的文字可以通过可选参数插入。注意这里页码不需要加以 `p.~` 或者 `pp.~` 前缀，`biblatex` 可以自动添加合适的前缀。
 
-在 `biblatex` 中，当加载宏包的时候文献样式就被选择了。这里，我们使用了 `authoryear`，当然 `numeric` 数字编码的样式和其他许多样式也是可用的。
+在 `biblatex` 中，当加载宏包的时候文献样式就被选择了。这里，我们使用了 `authoryear`，当然也可以用 `numeric` 数字编码和其他许多样式。
 
 ## 在 BibTeX 工作流和 `biblatex` 中选择
 
-纵使 BibTeX 工作流和 `biblatex` 都需要 BibTeX 文件作为输入然后在文档中产生结构类似的输出，但是他们使用了截然不同的方法产生这样的结果。这就意味着两种方法之间有一些不同，这些不同帮助您选择适合的最佳方式。
+纵使 BibTeX 工作流和 `biblatex` 都需要 BibTeX 文件作为输入然后在文档中产生结构类似的输出，但是他们使用了截然不同的方法产生这样的结果。这就意味着两种方法之间有一些差异，而通过这些差异来帮助您选择最适合的方式。
 
 在 BibTeX 工作流中文献样式最终会被一个由 `\bibliographystyle` 命令选择的 `.bst` 文件决定。`biblatex` 不使用 `.bst` 文件并使用了不同的系统。如果您使用的模板附带了 `.bst` 文件或者您的项目被要求使用特定的 `.bst` 文件，您必须选择 BibTeX 工作流而不可以使用 `biblatex`。
 
-`biblatex` 所采取的不同方式意味着您可以通过在文档导言区使用基于 LaTeX 的命令，直接修改文献和引用的输出格式。而修改 BibTeX 的 `.bst` 样式通常需要考察这些外部文件并需要 BibTeX 编程语言的相关知识。一般来讲，`biblatex` 都被称为是比 BibTeX 工作流更容易定制化的一种方案。
+`biblatex` 所采取的不同方式意味着您可以通过在文档导言区使用基于 LaTeX 的命令，直接修改文献和引用的输出格式。而修改 BibTeX 的 `.bst` 样式通常需要考察这些外部文件并需要 BibTeX 编程语言的相关知识。一般来讲，`biblatex` 被称为是比 BibTeX 工作流更容易定制化的一种方案。
 
-在 `biblatex` 中，通过更广泛的引用命令通常可以更加容易实现许多精心设计的引用样式。这也提供了更多独立于内容的特性。大致来说，许多 STEM 主题都不需要太关注这种样式的设定，但是对于一些人文学科中的许多复杂样式，这变得非常重要。
+在 `biblatex` 中，通过更广泛的引用命令通常可以更加容易实现许多精心设计的引用样式。这也提供了更多独立于内容的特性。大致来说，许多理工科（STEM）科目都不需要太关注这种样式的设定，但是对于一些人文学科中的许多复杂样式，这变得非常重要。
 
 BibTeX 只能对美式ASCII字符正确排序，并且对于非美式ASCII字符的排序需要依赖于美式ASCII字符的变通方法。而 Biber `biblatex` 提供了完整的 Unicode 排序能力。因此对于非 ASCII/非英语的文献排序而言，`biblatex` 通常是一个更好的选择。
 
-谈了这么久的 `biblatex`，BibTeX 工作流比 `biblatex` 更容易建立，意味着许多出版社和期刊都希望通过 BibTeX 工作流生成文献。这些出版社不能或者一般不期望 `biblatex` 的提交。
+谈了这么久 `biblatex`，实际上，BibTeX 工作流比 `biblatex` 更容易建立，意味着许多出版社和期刊都希望通过 BibTeX 工作流生成文献。这些出版社不能或者一般不期望 `biblatex` 的提交。
 
 总之，最重要的就是：向一个期刊或者出版社提交时，查看一下作者指南/提交指南。如果提供了 `.bst` 文件，您必须使用 BibTeX 工作流。如果您希望一个相对简单的文献和引用样式，并且只需要美式ASCII排序，BibTeX 工作流即可胜任。如果您需要稍微复杂的引用样式、非英语排序、或者想要更轻松地定制引用和文献样式，您可能需要考虑一下 `biblatex`。
 
@@ -161,4 +161,4 @@ BibTeX 只能对美式ASCII字符正确排序，并且对于非美式ASCII字符
 
 尝试 `natbib` 和 `biblatex` 的例子。对于 `natbib`，您将要运行：LaTeX, BibTeX, LaTeX, LaTeX；对于 `biblatex`，就是：LaTeX, Biber, LaTeX。查明怎么在您的编辑器中实现它，或者尝试一下 Overleaf 和 TeXLive.net 自动化工具。
 
-看看当您创建一个新的数据库记录和新的引用时会发生什么。添加不在数据库的引用条目然后看看会发生什么。实验 `natbib` 的 `numeric` 选项和 `biblatex` 的 `style=numeric` 选项。
+观察当您创建一个新的数据库记录和新的引用时会发生什么。添加不在数据库的引用记录然后看看会发生什么。实验 `natbib` 的 `numeric` 选项和 `biblatex` 的 `style=numeric` 选项。
