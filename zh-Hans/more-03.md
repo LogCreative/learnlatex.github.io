@@ -2,8 +2,39 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：LaTeX 文档基本结构"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
+description: "本课对于如何运行 LaTeX、使用的特殊字符、以及如何向输出的 PDF 中插入特殊字符提供了更多的细节。"
 toc-anchor-text: "更多：LaTeX 文档基本结构"
 ---
 
-Translation to be added _after_ English text completed.
+## 运行 LaTeX
+
+正如[之前提到过的](lesson-02)，LaTeX 文档仅仅是普通文本。为了验证这一点，尝试在一个简单的文本编辑器（比如 Windows 上的记事本）打开你的第一个文档。你应该会看到和 LaTeX 专用编辑器中一样的文本，只是没有对关键词的高亮。
+
+您也可以在不使用编辑器的情况下将文档转换为 PDF —— 使用命令行/终端，当然如果不熟悉也不用担心。如果*熟悉*命令行的话，您可以导航到包含您 `.tex` 源文件的目录中，然后运行
+
+`pdflatex first`
+
+或者
+
+`pdflatex first.tex`
+
+来排版 PDF。注意 `.tex` 后缀名是可选的：LaTeX 会默认文档以 `.tex` 结尾，除非您特别指定了后缀名。
+
+## 特殊字符
+
+如果您需要排印一个特殊字符，大多数情况下您可以简单地在它前面添加反斜杠实现，所以例如 `\{` 可以用来排印一个字面量 `{`。当然在小部分的情况下，您需要使用一个更长的命令：
+
+| 符号 | 短命令 <br><small>(数学和文本模式)</small> | 长命令 <br><small>(文本模式)</small> |
+| --- | --- | --- |
+| `{`    | `\{`          | `\textbraceleft`  |
+| `}`    | `\}`          | `\textbraceright` |
+| `$`    | `\$`          | `\textdollar`     |
+| `%`    | `\%`          |                   |
+| `&`    | `\&`          |                   |
+| `#`    | `\#`          |                   |
+| `_`    | `\_`          | `\textunderscore` |
+| ``\``  |               | `\textbackslash`  |
+| `^`    |               | `\textasciicircum`|
+| `~`    |               | `\textasciitilde` |
+
+对于最后三个字符没有可用的短命令，因为 `\\` 被用来指定断行，`\~` 和 `\^` 被用来在仅使用 ASCII 字符输入的情况下排印波浪和扬抑重音。
