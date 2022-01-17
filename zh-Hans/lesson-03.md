@@ -20,7 +20,7 @@ toc-description: "文档的基本结构。"
 
 <p
   class="hint">我们建议，即使你已经在本地配置了 LaTeX，也要尝试一下在线选项；这是一个很好的机会，可以看到不同系统是如何工作的。
-  We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  </p>
 
 ```latex
 \documentclass{article}
