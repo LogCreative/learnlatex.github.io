@@ -40,7 +40,7 @@ toc-anchor-text: "更多：使用文档类来切换设计"
 
 ## 产生图片的文档类
 
-有些情况下，您需要使用 LaTeX 制作图像（可能是很多文本的那种）。通常请款不修改，在这一“页”中您不需要除了内容本身的其他任何东西。最简单的做法就是使用 [`standalone`](https://ctan.org/pkg/standalone) 文档类。它为了包裹排印出的内容自动设定页面大小。
+有些情况下，您需要使用 LaTeX 制作图像（可能是很多文本的那种）。通常情况下，在这一“页”中您不希望需要除了内容本身之外的其他任何东西。最简单的做法就是使用 [`standalone`](https://ctan.org/pkg/standalone) 文档类。它为了包裹排印出的内容自动设定页面大小。
 
 ```latex
 \documentclass{standalone}
