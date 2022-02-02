@@ -2,8 +2,24 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：引用与参考文献"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
+description: "本课展示非英语参考文献的更多细节、如何将引用变为超链接以及不同 BibTeX 样式的主要区别。"
 toc-anchor-text: "更多：引用与参考文献"
 ---
 
-Translation to be added _after_ English text completed.
+## 处理非英语排序
+
+BibTeX 程序最初只是为处理英语引用而编写的。在处理重音字符上有很大限制，对于非拉丁字母会更有限制。与之形成对比的是，Biber 程序的编写从一开始就是用来处理多语言混合的情况。
+
+这就意味着如果您正在对参考文献排序，并且需要对除了英语顺序外的其他语言排序，那么应该使用 `biblatex` 与 Biber，而不是 `natbib` 与 BibTeX。
+
+## 超链接
+
+如果您加载了 `hyperref` 宏包（正如[早些时候](more-09)提到过的那样），那么它将自动转换参考文献中的一些内容为链接。这尤其对于 URL 和 DOI 很有用。
+
+## 最佳实践中不同样式的 BibTeX 输入差别
+
+虽然整体而言，BibTeX 文件的文法不论在 BibTeX 工作流或者 `biblatex` 中是相同的，但是支持的域集（被样式使用）以及他们确切的含义可能不仅在 BibTeX 工作流和 `biblatex` 中有区别，还在不同的 BibTeX 样式中有区别。对于类型和域来说，一个大的“核心集”对于绝大多数样式是相同的，但对于某些域会有差别。
+
+一个常见的例子就是 URL。一些老式的 BibTeX `.bst` 样式（特别是“标准 BibTeX 样式”，比如 `plain.bst`，`unsrt.bst`，...）在早于 URL 发明的时期出现，对于在线资源并没有一个特定的 URL 域。很多更新的样式 _确实_ 含有一个特定的 `url` 域。一个在老式样式中展示 URL 的替代方法通常是使用 `howpublished` 域，但对于新式的样式当然更推荐使用特定的 `url` 域。
+
+为了能够充分发挥所使用样式的潜能，您必须了解它所支持的域集以及它们的语义。
