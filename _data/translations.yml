@@ -95,7 +95,7 @@ navigational-elements_mission:
   pt: "Missão"
   tr: "Amaç"
   vi: "Sứ mệnh"
-  zh-Hans: "职责"
+  zh-Hans: "使命"
 navigational-elements_help:
   de: "Hilfe"
   en: "Help"
@@ -175,7 +175,7 @@ navigational-elements_nextmain:
   pt: "Próxima lição principal"
   tr: "Bir sonraki ana ders"
   vi: "Bài chính tiếp theo"
-  zh-Hans: "下一主干课程"
+  zh-Hans: "下一主干教程"
 navigational-elements_return:
   de: "Zurück zur Hauptlektion"
   en: "Return to main lesson"
@@ -185,7 +185,7 @@ navigational-elements_return:
   pt: "Retornar à lição principal"
   tr: "Derse dön"
   vi: "Quay trở lại bài chính"
-  zh-Hans: "返回主干课程"
+  zh-Hans: "返回主干教程"
 navigational-elements_toc:
   de: "Inhaltsverzeichnis"
   en: "Table of Contents"
