@@ -39,7 +39,7 @@ LaTeX 编辑器的数量可能远超您的想象：StackExchange 上有一个[�
 
 这些网站中的一部分将 LaTeX 与类似文字处理软件的功能结合在一起；而另一部分则偏重让您直接编写 LaTeX 代码，因此更接近本地安装。
 
-有些网站无需登录便可使用，例如 [LaTeX CGI](https://latexcgi.xyz)，这也是本网站编辑和运行示例代码所依赖的系统。对于更完整和复杂的工作，较为成熟的网站都会要求您事先注册。这样您就可以保存自己的工作，同时也能避免网站过载。我们已经配置好了链接，因此您也可以在 [Overleaf](https://www.overleaf.com) 上面编辑示例代码。Overleaf 也是现在最流行的在线 LaTeX 服务。当然还有其他类似的网站，例如 [Papeeria](https://papeeria.com/)。
+有些网站无需登录便可使用，例如 [TeXLive.net](https://texlive.net)，这也是本网站编辑和运行示例代码所依赖的系统。对于更完整和复杂的工作，较为成熟的网站都会要求您事先注册。这样您就可以保存自己的工作，同时也能避免网站过载。我们已经配置好了链接，因此您也可以在 [Overleaf](https://www.overleaf.com) 上面编辑示例代码。Overleaf 也是现在最流行的在线 LaTeX 服务。当然还有其他类似的网站，例如 [Papeeria](https://papeeria.com/)。
 
 ## 练习
 

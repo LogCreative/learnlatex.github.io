@@ -35,7 +35,7 @@ Multline
 
 ### 数学对齐环境中的列
 
-`amsmath` 对齐环境被设计为每对对齐列的第一栏右对齐、第二栏左对齐。这将允许展示多个公式，其每个公式向它关系符号的方向对齐。
+`amsmath` 对齐环境被设计为每两个对齐列的第一栏右对齐、第二栏左对齐。这将允许展示多个公式，其每个公式向它关系符号的方向对齐。
 
 ```latex
 \documentclass{article}
@@ -136,7 +136,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Mathtools
 
-`mathtools` 宏包会加载 `amsmath` 并添加一些额外的功能，比如允许指定列对齐的 `amsmath` 矩阵环境变种。
+`mathtools` 宏包会加载 `amsmath` 并添加一些额外的功能，比如提供允许指定列对齐方式的 `amsmath` 矩阵环境变种。
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -157,7 +157,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Unicode Math
 
-将会在[第 14 课](lesson-14) 看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但您可能会加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见[宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
+将会在 [第 14 课](lesson-14) 看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但您可能会加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见[宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
 
 ```latex
 % !TEX lualatex
