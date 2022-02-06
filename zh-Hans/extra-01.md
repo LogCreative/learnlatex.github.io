@@ -3,8 +3,8 @@ layout: "lesson"
 lang: "zh-Hans"
 title: "LaTeX 案例展示——拓展学习的例子"
 description: "本课展示了主课中没有涉及的 LaTeX 其他流行宏包的例子。"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+toc-anchor-text: "LaTeX 案例展示"
+toc-description: "拓展学习的例子。"
 ---
 
 # 案例展示
