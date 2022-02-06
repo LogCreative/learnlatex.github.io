@@ -2,12 +2,15 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "查看说明文档并获取帮助"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
+description: "本课展示了 LaTeX 相关软件和宏包的文档主要资源以及当您遇到困难时应当如何获取帮助。"
 toc-anchor-text: "帮助与文档"
 toc-description: "查看说明文档并获取帮助。"
 ---
 
 # 查看说明文档并获取帮助
+
+<span
+  class="summary">本课展示了 LaTeX 相关软件和宏包的文档主要资源以及当您遇到困难时应当如何获取帮助。</span>
 
 查看宏包或文档类的说明文档有很多种方式。
 
