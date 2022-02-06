@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "交叉引用"
-description: "本课展示了如何在文档中引用被编号的元素，比如图、表、节次等。"
+description: "本课展示了如何在文档中引用被编号的元素，比如图、表、目次等。"
 toc-anchor-text: "交叉引用"
 toc-description: "引用图片、表格等。"
 ---
@@ -10,7 +10,7 @@ toc-description: "引用图片、表格等。"
 # 交叉引用
 
 <span
-  class="summary">本课展示了如何在文档中引用被编号的元素，比如图、表、节次等。</span>
+  class="summary">本课展示了如何在文档中引用被编号的元素，比如图、表、目次等。</span>
 
 当您在编写任意长度的文档时，您想要引用编号的项目，如：图片、表格或者公式。幸运的是，我们只需要进行设置 LaTeX 便能够自动的添加正确的编号。
 
@@ -56,8 +56,6 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 `\label` 命令总是引用之前编号的实体：一个章节，一个公式，一个浮动体等。这意味着 `label` 总是添加在你想引用的东西 _后面_。特别是，当您创建浮动体时，`\label` 会在后面跟在（或者更好的方式是在里面） `\caption` 命令后面，但是在浮动体环境中。
 
 ## 练习
-
-## Exercises
 
 尝试添加新的可编号环境（section，subsection，编号的列表）来测试文档，找出让 `\label` 命令运行都需要多少次运行。
 
