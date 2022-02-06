@@ -7,15 +7,15 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
-# Showcase
+# 案例展示
 
 <span
   class="summary">本课展示了主课中没有涉及的 LaTeX 其他流行宏包的例子。</span>
 
-本课对 LaTeX 的核心功能进行概览。LaTeX 拥有大量的拓展宏包，并被用于许多学科领域。我们将在此给出一些例子，不做解释但会给出 [texdoc.org](https://texdoc.org) 上宏包文档的链接。除另有说明，这些例子都摘自宏包文档。
+本课对 LaTeX 的核心功能进行概览。LaTeX 拥有大量的拓展宏包，并被用于许多学科领域。我们将在此给出一些例子，不做解释但会给出 [texdoc.org](https://texdoc.org) 上宏包文档的链接。除非另有说明，这些例子都将摘自宏包文档。
 
 <p
-  class="hint">注意，这里包含这些宏包并不作为其相对于其他类似宏包的背书。我们只是通过一个小例子来展示主课中没有涉及的领域。</p>
+  class="hint">注意，这里包含这些宏包并不作为其相对于其他类似宏包的背书。我们只是通过一个小例子来展示课程中没有涉及的领域。</p>
 
 ## 化学
 

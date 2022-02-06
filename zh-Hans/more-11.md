@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：格式：字体与间距"
-description: "本课展示如何对于单一段落抑制段落缩进。"
+description: "本课展示了如何对于单一段落抑制段落缩进。"
 toc-anchor-text: "更多：格式：字体与间距"
 ---
 

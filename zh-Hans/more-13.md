@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：组建更长的文档"
-description: "本课展示如何制作索引以及如何使用 imakeidx 宏包以自动化流程。"
+description: "本课展示了如何制作索引以及如何使用 imakeidx 宏包以自动化流程。"
 toc-anchor-text: "更多：组建更长的文档"
 ---
 

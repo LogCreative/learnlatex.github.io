@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：数学公式"
-description: "本课展示更多的 amsmath 对齐环境、如何在数学环境中加粗、数学扩展宏包 mathtools 以及使用 Unicode 输入于数学环境。"
+description: "本课展示了更多的 amsmath 对齐环境、如何在数学环境中加粗、数学扩展宏包 mathtools 以及使用 Unicode 输入于数学环境。"
 toc-anchor-text: "更多：数学公式"
 ---
 
@@ -157,7 +157,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Unicode Math
 
-将会在 [第 14 课](lesson-14) 看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但您可能会加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见[宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
+将会在 [第 14 课](lesson-14) 看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但您可能会加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见 [宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
 
 ```latex
 % !TEX lualatex

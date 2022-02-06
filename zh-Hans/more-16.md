@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：查看说明文档并获取帮助"
-description: "本课展示哪里可以找到 LaTeX 本身的源文件。"
+description: "本课展示了哪里可以找到 LaTeX 本身的源文件。"
 toc-anchor-text: "更多：查看说明文档并获取帮助"
 ---
 

@@ -12,7 +12,7 @@ toc-description: "图片的外观和位置。"
 <span
   class="summary">本课展示了如何向您的文档中添加插图、如何改变他们的外观以及如何自动地定位或浮动这些插图。</span>
 
-为了向 LaTeX 中插入外部来源的图片，使用 `graphicx` 宏包以向 LaTeX 中添加 `\includegraphics` 命令。
+为了向 LaTeX 中插入外部来源的图片，需要使用 `graphicx` 宏包来向 LaTeX 中添加 `\includegraphics` 命令。
 
 ```latex
 \documentclass{article}
@@ -28,9 +28,9 @@ is an imported PDF.
 \end{document}
 ```
 
-您可以添加 EPS, PNG, JPG 以及 PDF 文档。如果您有多于一种后缀的同名图像，那么可以写成 `example-image.png`。（如果您没有指定后缀的话，`graphicx` 宏包会尝试猜测出后缀名。）
+您可以插入 EPS, PNG, JPG 以及 PDF 文档。如果您有多于一种后缀的同名图像，那么可以写成 `example-image.png`。（如果您没有指定后缀名，那么 `graphicx` 宏包会尝试猜测出后缀名。）
 
-您或许注意到在这儿我们使用了一个新的环境：`center`，它用来将图片在页面中水平居中。[稍后](lesson-11) 我们会讨论更多关于间距和定位的内容。
+您或许注意到，在这儿我们使用了一个新的环境：`center`，它用来将图片页面水平居中。[稍后](lesson-11) 我们会讨论更多关于间距和定位的内容。
 
 ## 更改图片外观
 
@@ -70,7 +70,7 @@ Some text
 
 ## 浮动图片
 
-传统排版业，特别是技术文档的排版，图片可能会移动到文档中的其他位置上。这通常被称为 *浮动*（float）。图片通常会被设定为浮动体以至于页面中不会有大面积的留白。
+传统排版业，特别是技术文档的排版，图片可能会移动到文档中的其他位置上。这通常被称为 *浮动*（float）。图片通常会被设定为浮动体，从而页面中不会有大面积的留白。
 
 ```latex
 \documentclass{article}
@@ -92,7 +92,7 @@ Test location.
 \end{document}
 ```
 
-这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是浮动体可以在原来的地方（`Test location` 旁边）或者是一页的顶部。您最多可以使用四种位置描述符（position specifier）：
+这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是，浮动体可以在原来的地方（`Test location` 旁边），或者是一页的顶部。您最多可以使用四种位置描述符（position specifier）：
 
 - `h` Here 这里（如果可以的话）
 - `t` Top 页面顶部

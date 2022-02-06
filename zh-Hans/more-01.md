@@ -12,6 +12,6 @@ TeX 最早是由斯坦福大学教授 Donald Knuth 发明的。Knuth 以其系�
 
 1977 年 5 月，TeX 开始开发。
 
-原始的 TeX 用起来非常复杂，甚至 Donald Knuth 都使用了大量的宏来编辑他的书籍。现就职于微软的 Leslie Lamport 也开发了一系列宏来简化 TeX 的使用，并将这个宏集命名为 “LaTeX”。
+原始的 TeX 用起来非常复杂，甚至 Donald Knuth 都使用了大量的宏（macro）来编辑他的书籍。现就职于微软的 Leslie Lamport 也开发了一系列宏来简化 TeX 的使用，并将这个宏集命名为 “LaTeX”。
 
 时至今日，LaTeX 是操作 TeX 的最常用方式，另一种替代品是 [ConTeXt](https://www.contextgarden.net/)。

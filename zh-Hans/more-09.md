@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "更多：交叉引用"
-description: "本课展示如何通过加载 hyperref 宏包为交叉引用添加链接。"
+description: "本课展示了如何通过加载 hyperref 宏包为交叉引用添加链接。"
 toc-anchor-text: "更多：交叉引用"
 ---
 
