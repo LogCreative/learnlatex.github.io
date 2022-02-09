@@ -36,7 +36,7 @@ toc-anchor-text: "更多：使用文档类来切换设计"
 \end{document}
 ```
 
-这里展示了两个重要的想法。首先，`beamer` 将文档分割成帧（frame），每一帧都可以产生多于一个幻灯片（页）。其次，`beamer` 向普通的 LaTeX 语法添加功能以允许代码中的一些部分“每次显示一点儿”。虽然这很强大，但也比我们所能涉及的已经复杂很多了：可以查阅 [这个博文](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) 以了解更多。
+这里展示了两个重要的想法。首先，`beamer` 将文档分割成帧（frame），每一帧都可以产生多于一个幻灯片（页）。其次，`beamer` 向普通的 LaTeX 语法添加功能以允许代码中的一些部分“每次显示一点儿”。虽然这很强大，但也比我们所能涉及的已经复杂很多了：可以查阅[这个博文](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)以了解更多。
 
 ## 产生图片的文档类
 
