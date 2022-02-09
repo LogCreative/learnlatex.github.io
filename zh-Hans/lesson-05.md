@@ -73,7 +73,7 @@ The text goes Here
 
 两个最大且最流行的扩展类分别是 KOMA-Script 包和 memoir 文档类。KOMA-Script 包提供了标准类的一些“平行”类：`scrartcl`, `scrreprt`, `scrbook` 以及 `scrlttr2`，而 `memoir` 文档类更像是 `book` 类的一种拓展。
 
-（译者注：CTeX 中文社区也提供了 ctex 宏包，其中包含了 `ctexart`, `ctexrep` 和 `ctexbook` 三个文档类，用来编写中文短文、中文报告和中文书籍。）
+（译者注：CTeX 中文社区也提供了 ctex 宏包，其中包含了 `ctexart`, `ctexrep` 和 `ctexbook` 三个文档类，用来编写中文短文、中文报告和中文书籍。更多内容，可参见课程 [排版中文](language-01)。）
 
 这些拓展的文档类提供了许多个性化钩子，我们会在一个练习中探索一番。您可能会思考我们怎么才能知道它们提供了哪些钩子，这一点将会在 [稍后的课程](lesson-16) 中提到，您可以跳读看看！
 

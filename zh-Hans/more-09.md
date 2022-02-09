@@ -8,7 +8,7 @@ toc-anchor-text: "更多：交叉引用"
 
 ## 为交叉引用添加链接
 
-通过 `hyperref` 宏包，您可以为交叉引用添加超链接。在大多情况下，`hyperref` 应该在导言区的其他宏包被指定之后才加载。
+通过 `hyperref` 宏包，您可以为交叉引用添加超链接。在大多情况下，`hyperref` 应该在导言区其他宏包之后加载。
 
 ```latex
 \documentclass{article}
