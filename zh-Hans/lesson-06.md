@@ -42,7 +42,7 @@ material, and which will be able to give us at least one hyphenation point.
 
 尝试取消注释加载 `babel` 宏包的那一行（显然这一行带有误导性），然后观察排版效果。（标准断字规则是英语(美国)。）
 
-根据涉及的语言不同，`babel` 宏包不仅影响着断字。如有需要，我们给出了 [更多细节](more-06)。
+根据涉及的语言不同，`babel` 宏包不仅影响着断字。如有需要，我们给出了[更多细节](more-06)。
 
 ## 改变设计
 

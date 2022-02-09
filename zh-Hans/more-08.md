@@ -35,7 +35,7 @@ toc-anchor-text: "更多：表格"
 ```
 <!-- {% endraw %} -->
 
-`\itshape` 将所有后续的文字变为斜体，但效果范围被限制在单元格的“容器”中。我们将会在 [后续课程](lesson-11) 中学习如何手动设定文本格式。
+`\itshape` 将所有后续的文字变为斜体，但效果范围被限制在单元格的“容器”中。我们将会在[后续课程](lesson-11)中学习如何手动设定文本格式。
 
 您或许想让作为表头的第一个单元格不受影响，这里可以使用 `\multicolumn`。记住它可以用来改变单一单元格的对齐方式，正如下面所展示的那样。
 
@@ -102,7 +102,7 @@ toc-anchor-text: "更多：表格"
 ```
 <!-- {% endraw %} -->
 
-（我们将会 [很快了解](lesson-11) `\hspace`：可以猜到它增加了水平间距。）
+（我们将会[很快了解](lesson-11)`\hspace`：可以猜到它增加了水平间距。）
 
 `!` 引导符做了类似的一件事。区别在于它向两列之间的间隙中心 _添加_ 参数中的内容。
 
@@ -198,7 +198,7 @@ toc-anchor-text: "更多：表格"
 
 注意任何非数值的单元格必须通过包裹大括号的形式“保护”起来。
 
-`siunitx` 宏包提供了很多不同的格式化数值方式——详见 [宏包文档](https://texdoc.org/pkg/siunitx)。
+`siunitx` 宏包提供了很多不同的格式化数值方式——详见[宏包文档](https://texdoc.org/pkg/siunitx)。
 
 ## 指定表格总宽度
 
@@ -286,7 +286,7 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-和之前这些课中讨论的其他形式不同，`tabularx` 需要使用试验宽度排版表格数次以做出最终设定。这意味着环境的使用会有些许限制——详见 [宏包文档](https://texdoc.org/pkg/tabularx)。
+和之前这些课中讨论的其他形式不同，`tabularx` 需要使用试验宽度排版表格数次以做出最终设定。这意味着环境的使用会有些许限制——详见[宏包文档](https://texdoc.org/pkg/tabularx)。
 
 ## 跨页表格
 
@@ -333,7 +333,7 @@ A Wider Entry & b\\
 
 ## 表格标注
 
-一种很常见的需求是，表格中使用类似于脚注的标记以代指紧跟表格后的标注。`threeparttable` 宏包简化了这种表格的标记方法，将设定标注所在的区块宽度为表格同宽。详细细节参见 [宏包文档](https://texdoc.org/pkg/threeparttable)，我们在这里展示一个简单的例子。
+一种很常见的需求是，表格中使用类似于脚注的标记以代指紧跟表格后的标注。`threeparttable` 宏包简化了这种表格的标记方法，将设定标注所在的区块宽度为表格同宽。详细细节参见[宏包文档](https://texdoc.org/pkg/threeparttable)，我们在这里展示一个简单的例子。
 
 ```latex
 \documentclass{article}
@@ -402,7 +402,7 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 
 ## 定义新的列类型
 
-正如 [主课](lesson-08) 所展示的那样，`array` 宏包允许构造诸如 `>{\bfseries}c` 的形式以表示一个粗体居中列。通常一种方便的做法是，定义一个新的列类型封装之，比如说
+正如[主课](lesson-08)所展示的那样，`array` 宏包允许构造诸如 `>{\bfseries}c` 的形式以表示一个粗体居中列。通常一种方便的做法是，定义一个新的列类型封装之，比如说
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}

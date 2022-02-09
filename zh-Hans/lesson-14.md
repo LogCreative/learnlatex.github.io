@@ -31,8 +31,8 @@ TeX 和 LaTeX 被广泛使用之前，只需内置支持欧洲语言即可。虽
 ```
 {: .noedit :}
 
-对于 `pdflatex` 而言，许多字体都可以通过宏包加载。您可以查看 [LaTeX 字体目录](https://www.tug.org/FontCatalogue/) 或
-[CTAN 中的 “字体” 主题](https://www.ctan.org/topic/font) 以查阅一些选择。您也可以在网上搜索需要的字体，并寻找一个 `pdflatex` 兼容的版本。如果您想要使用一种专有字体，可以搜寻一个合适的副本（大部分情况下都存在和原版足够类似的那种）。
+对于 `pdflatex` 而言，许多字体都可以通过宏包加载。您可以查看 [LaTeX 字体目录](https://www.tug.org/FontCatalogue/)或
+[CTAN 中的 “字体” 主题](https://www.ctan.org/topic/font)以查阅一些选择。您也可以在网上搜索需要的字体，并寻找一个 `pdflatex` 兼容的版本。如果您想要使用一种专有字体，可以搜寻一个合适的副本（大部分情况下都存在和原版足够类似的那种）。
 
 ## Unicode 时代
 
@@ -47,7 +47,7 @@ TeX 和 LaTeX 被广泛使用之前，只需内置支持欧洲语言即可。虽
 
 这个例子选择了 TeX Gyre Termes 字体，和上面的 `pdflatex` 例子一样。值得注意的是，这种方法对 *任何* OpenType 字体都能用。一些对 `pdflatex` 可用的字体在 `xelatex` 和 `lualatex` 中通过对应的宏包也可以使用。或者是和上面一样，通过使用 `fontspec` 宏包加载您电脑上安装的任何字体。
 
-[LaTeX 字体目录](https://www.tug.org/FontCatalogue/) 展示了可用的 OpenType 字体，因此您也可以用它来查阅字体资源。当然也可以使用前文提到的 [CTAN 页面](https://www.ctan.org/topic/font)。
+[LaTeX 字体目录](https://www.tug.org/FontCatalogue/)展示了可用的 OpenType 字体，因此您也可以用它来查阅字体资源。当然也可以使用前文提到的 [CTAN 页面](https://www.ctan.org/topic/font)。
 
 选择好字体之后，就可以直接向文档里输入普通的 Unicode 字体了。下面的例子展示了一些拉丁字母、德语字母以及中日韩（CJK）表意文字的输入：
 

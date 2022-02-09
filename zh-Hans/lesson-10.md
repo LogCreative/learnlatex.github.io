@@ -129,7 +129,7 @@ A paragraph about a larger equation
 
 ## `amsmath` 宏包
 
-数学符号太多了，就意味着 LaTeX 内核内置的工具并不能提供所有内容。`amsmath` 宏包拓展了内核以提供更多的方案。[`amsmath` 用户手册](http://texdoc.org/pkg/amsmath) 提供了比本课更多的例子。
+数学符号太多了，就意味着 LaTeX 内核内置的工具并不能提供所有内容。`amsmath` 宏包拓展了内核以提供更多的方案。[`amsmath` 用户手册](http://texdoc.org/pkg/amsmath)提供了比本课更多的例子。
 
 ```latex
 \documentclass{article}
@@ -214,7 +214,7 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 \end{document}
 ```
 
-如果您需要加粗其他符号，请见 [进一步的细节页面](more-10)。
+如果您需要加粗其他符号，请见[进一步的细节页面](more-10)。
 
 ## 练习
 
