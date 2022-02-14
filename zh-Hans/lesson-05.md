@@ -12,7 +12,7 @@ toc-description: "设定文档的总体布局。"
 <span
   class="summary">本课解释了什么是文档类、其如何影响文档的布局、以及在 TeX 发行版中您能够使用的主要文档类。</span>
 
-您或许注意到了目前为止我们所创建的 LaTeX 文档都是从 `\documentclass` 一行开始的，并且 `\documentclass{article}` 是目前为止最常见的选择。（在[上一课](lesson-04)我们需要 `\documentclass{report}` 来尝试 `\chapter` 命令。）所有 LaTeX 文档都需要这一行命令，并且（几乎）是您第一个要输入的命令。
+您或许注意到了，目前为止我们所创建的 LaTeX 文档都是从 `\documentclass` 一行开始的，并且 `\documentclass{article}` 是目前为止最常见的选择。（在[上一课](lesson-04)我们需要 `\documentclass{report}` 来尝试 `\chapter` 命令。）所有 LaTeX 文档都需要这一行命令，并且（几乎）是您第一个要输入的命令。
 
 ## 文档类做了什么
 
@@ -28,7 +28,7 @@ toc-description: "设定文档的总体布局。"
 
 ## 基本文档类
 
-LaTeX 提供了一系列标准文档类，它们看起来都相像但也有些变化：
+LaTeX 提供了一系列标准文档类，它们看起来都相像，但也有些许变化：
 
 - `article`  
   不包含章的短文档
@@ -41,7 +41,7 @@ LaTeX 提供了一系列标准文档类，它们看起来都相像但也有些�
 - `slides`  
   幻灯片（详见后文）
 
-我们已经看到，`article`, `report`, `book` 文档类都有非常相似的命令。当撰写一个 `letter` 时，可以使用的命令已经有点儿不同了。
+我们已经看到，`article`, `report`, `book` 文档类都有非常相似的命令。当撰写一个 `letter` 时，可以使用的命令已经有点不同了。
 
 ```latex
 \documentclass{letter}
@@ -67,11 +67,11 @@ The text goes Here
 
 ## 富功能文档类
 
-核心文档类都很稳定，也就意味着在设计和提供的命令范围上非常保守。长久以来也出现了许多非常强大的文档类，可以让您不必手动操作就可以彻底改变一些设计（这一点我们会在[稍后](lesson-11)提及）。
+核心文档类都很稳定，但也就意味着在设计和提供的命令范围上非常保守。长久以来，也出现了许多非常强大的文档类，可以让您不必手动操作就可以彻底改变一些设计（这一点我们会在[稍后](lesson-11)提及）。
 
 美国数学会提供了一些标准文档类的变种（`amsart`, `amsbook`），它们更接近于当时数学期刊出版物的传统设计。
 
-两个最大且最流行的扩展类分别是 KOMA-Script 包和 memoir 文档类。KOMA-Script 包提供了标准类的一些“平行”类：`scrartcl`, `scrreprt`, `scrbook` 以及 `scrlttr2`，而 `memoir` 文档类更像是 `book` 类的一种拓展。
+两个最大且最流行的扩展类是 KOMA-Script 包和 memoir 文档类。KOMA-Script 包提供了标准类的一些“平行”类：`scrartcl`, `scrreprt`, `scrbook` 以及 `scrlttr2`，而 `memoir` 文档类更像是 `book` 类的一种拓展。
 
 （译者注：CTeX 中文社区也提供了 ctex 宏包，其中包含了 `ctexart`, `ctexrep` 和 `ctexbook` 三个文档类，用来编写中文短文、中文报告和中文书籍。更多内容，可参见课程[排版中文](language-01)。）
 
@@ -79,7 +79,7 @@ The text goes Here
 
 ## 幻灯片演示
 
-`slides` 是为 20 世纪 80 年代中期物理投影片开发的文档类，就没有 PDF 交互式演示的一些功能。虽然的确有做到后者的现代文档类，但是对于一般的 LaTeX 文档来说，它们可能会稍显专业一些，所以我们会在[进一步的细节页面](more-05)讲述它。
+`slides` 是为 20 世纪 80 年代中期物理投影片开发的文档类，它没有 PDF 交互式演示的一些功能。虽然的确有做到后者的现代文档类，但是对于一般的 LaTeX 文档来说，它们可能会稍显专业一些，所以我们会在[进一步的细节页面](more-05)讲述它。
 
 ## 练习
 
