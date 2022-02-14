@@ -71,7 +71,7 @@ The text goes Here
 
 美国数学会提供了一些标准文档类的变种（`amsart`, `amsbook`），它们更接近于当时数学期刊出版物的传统设计。
 
-两个最大且最流行的扩展类是 KOMA-Script 包和 memoir 文档类。KOMA-Script 包提供了标准类的一些“平行”类：`scrartcl`, `scrreprt`, `scrbook` 以及 `scrlttr2`，而 `memoir` 文档类更像是 `book` 类的一种拓展。
+两个最大且最流行的扩展类是 KOMA-Script 包和 memoir 文档类。KOMA-Script 包提供了标准类的一些「平行」类：`scrartcl`, `scrreprt`, `scrbook` 以及 `scrlttr2`，而 `memoir` 文档类更像是 `book` 类的一种拓展。
 
 （译者注：CTeX 中文社区也提供了 ctex 宏包，其中包含了 `ctexart`, `ctexrep` 和 `ctexbook` 三个文档类，用来编写中文短文、中文报告和中文书籍。更多内容，可参见课程[排版中文](language-01)。）
 
