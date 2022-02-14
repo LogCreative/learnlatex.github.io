@@ -38,7 +38,7 @@ bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-这并不是一个 TeX 错误，而是一个操作系统错误，表明 TeX 并没有被安装或者未被找到。常见的情形是只安装了诸如 TeXworks 或 TeXShop 的 _编辑器_ 但并没有安装诸如 TeX Live 或 MiKTeX 的 TeX 系统。
+这并不是一个 TeX 错误，而是一个操作系统错误，表明 TeX 并没有被安装或者未被找到。常见的情形是只安装了诸如 TeXworks 或 TeXShop 的**编辑器**但并没有安装诸如 TeX Live 或 MiKTeX 的 TeX 系统。
 
 ### TeX 错误信息结构
 
