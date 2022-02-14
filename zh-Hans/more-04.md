@@ -8,7 +8,7 @@ toc-anchor-text: "更多：逻辑结构"
 
 ## 文档标题
 
-LaTeX 对于文档标题提供了一些逻辑标记命令：设定“元数据”的三个命令和使用它的一个命令。
+LaTeX 对于文档标题提供了一些逻辑标记命令：设定「元数据」的三个命令和使用它的一个命令。
 
 ```latex
 \documentclass{article}
@@ -29,7 +29,7 @@ Some normal text.
 
 ## 描述列表
 
-除了有序和无序列表，LaTeX 还提供了不太常见的另一种列表“描述列表”。
+除了有序和无序列表，LaTeX 还提供了不太常见的另一种列表「描述列表」。
 
 ```latex
 \documentclass{article}
