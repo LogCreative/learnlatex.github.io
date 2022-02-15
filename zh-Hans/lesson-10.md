@@ -39,10 +39,10 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-你或许在其他地方看到了「类似 LaTeX 的」数学公式输入系统。比如，可以向网页中放置公式的 MathJax。这些系统之所以通常接受 LaTeX 语法的微小变种作为输入，是因为它们实际上并不使用 LaTeX 「后端」。
+你或许在其他地方看到了「类似 LaTeX 的」数学公式输入系统。比如，可以向网页中放置公式的 MathJax。这些系统之所以通常接受 LaTeX 语法的微小变种作为输入，是因为它们实际上并不使用 LaTeX「后端」。
 
 <p
-  class="hint">我们的例子都使用了 <i>标准的</i> LaTeX 语法。如果你在其他地方看到了一些不同的用法，那么可能只是因为你看到的内容用的并不是 LaTeX。</p>
+  class="hint">我们的例子都使用了<b>标准的</b> LaTeX 语法。如果你在其他地方看到了一些不同的用法，那么可能只是因为你看到的内容用的并不是 LaTeX。</p>
 
 ### 行内数学模式和数学符号
 
@@ -102,8 +102,8 @@ A paragraph about a larger equation
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\newcommand{\diff}{\mathop{}\!d}            % For italic
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\newcommand{\diff}{\mathop{}\!d}            % 斜体
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % 直立体
 \begin{document}
 A paragraph about a larger equation
 \[
@@ -125,7 +125,7 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-公式编号将会自动递增，公式旁或者只有一个数字（就像这个例子一样）或者会加一个目次号码的前缀，比如 (2.5) 表示第 2 节的第 5 个公式。设定编号格式是在文档类内进行的，这里就不再展开了。
+公式编号将会自动递增，公式旁或者只有一个数字（就像这个例子一样），或者会加一个目次号码的前缀，比如 (2.5) 表示第 2 节的第 5 个公式。设定编号格式是在文档类内进行的，这里就不再展开了。
 
 ## `amsmath` 宏包
 
@@ -178,7 +178,7 @@ d & e & f
 
 ## 数学模式的字体
 
-和正常文本不同的是，数学模式的字体变化通常会蕴含非常特定的意义。所以它们经常被写做特殊的命令。下面就是你需要的一组命令：
+和正常文本不同的是，数学模式的字体变化通常会蕴含非常特定的意义。因此它们经常被写做特殊的命令。下面就是你需要的一组命令：
 
 - `\mathrm`: 罗马字体（直立体）
 - `\mathit`: 使用普通文本字间隔的斜体
@@ -197,7 +197,7 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-注意默认情况下数学斜体会让字母产生较大的间距，以至于它们可能会看起来像是一些变量的乘积。这种情况下，使用 `\mathit` 来产生斜体文字。
+注意默认情况下数学斜体会让字母产生较大的间距，因此它们可能会看起来像是一些变量的乘积。这种情况下，使用 `\mathit` 来产生斜体文字。
 
 这些数学字体命令 `\math..` 针对数学使用了特殊的字体。有时你可能需要在数学公式中嵌入一个属于外部句子的词，并需要使用当前文段的字体，在这种情况下可以使用 `\text{...}`（由 `amsmath` 宏包提供）或者是特定的字体比如 `\textrm{..}`。
 

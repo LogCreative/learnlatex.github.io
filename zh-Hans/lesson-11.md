@@ -73,7 +73,7 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-对于大段来说，我们使用能够更改字体设置的命令：比如说 `\bfseries` 和 `\itshape`。因为这些命令设置完毕后不会复原，所以我们需要定义一个**组 (group)**用以防止这些设置作用于整个文档。LaTeX 环境是一个组，表格单元格也是一个组，我们也可以使用 `{...}` 来显式地定义一个组。
+对于大段来说，我们使用能够更改字体设置的命令：比如说 `\bfseries` 和 `\itshape`。因为这些命令设置完毕后不会复原，所以我们需要定义一个「组（group）」用以防止这些设置作用于整个文档。LaTeX 环境是一个组，表格单元格也是一个组，我们也可以使用 `{...}` 来显式地定义一个组。
 
 ```latex
 \documentclass{article}
