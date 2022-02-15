@@ -136,7 +136,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Mathtools
 
-`mathtools` 宏包会加载 `amsmath` 并添加一些额外的功能，比如提供允许指定列对齐方式的 `amsmath` 矩阵环境变种。
+`mathtools` 宏包会加载 `amsmath` 并添加一些额外的功能，例如，提供允许指定列对齐方式的 `amsmath` 矩阵环境变种。
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
