@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "字体与 Unicode 引擎"
-description: "本课讲述了 LaTeX 如何解释 Unicode 输入以及它如何影响您的输入和使用的字体。了解关于 Unicode 和 OpenType 字体支持的相关知识。"
+description: "本课讲述了 LaTeX 如何解释 Unicode 输入以及它如何影响你的输入和使用的字体。了解关于 Unicode 和 OpenType 字体支持的相关知识。"
 toc-anchor-text: "字体与 Unicode 引擎"
 toc-description: "选择字体和文件编码。"
 ---
@@ -10,7 +10,7 @@ toc-description: "选择字体和文件编码。"
 # 字体与 Unicode 引擎
 
 <span
-  class="summary">本课讲述了 LaTeX 如何解释 Unicode 输入以及它如何影响您的输入和使用的字体。了解关于 Unicode 和 OpenType 字体支持的相关知识。</span>
+  class="summary">本课讲述了 LaTeX 如何解释 Unicode 输入以及它如何影响你的输入和使用的字体。了解关于 Unicode 和 OpenType 字体支持的相关知识。</span>
 
 TeX 和 LaTeX 被广泛使用之前，它们只需内置支持欧洲语言即可。虽然它们对于其他语言（比如德语和俄语）的文字也有一定的支持。
 
@@ -31,12 +31,12 @@ TeX 和 LaTeX 被广泛使用之前，它们只需内置支持欧洲语言即可
 ```
 {: .noedit :}
 
-对于 `pdflatex` 而言，许多字体都可以通过宏包加载。您可以查看 [LaTeX 字体目录](https://www.tug.org/FontCatalogue/)或
-[CTAN 中的「字体」主题](https://www.ctan.org/topic/font)以查阅一些选择。您也可以在网上搜索需要的字体，并寻找一个 `pdflatex` 兼容的版本。如果您想要使用一种专有字体，可以搜寻一个合适的副本（大部分情况下都存在与原版足够类似的那种）。
+对于 `pdflatex` 而言，许多字体都可以通过宏包加载。你可以查看 [LaTeX 字体目录](https://www.tug.org/FontCatalogue/)或
+[CTAN 中的「字体」主题](https://www.ctan.org/topic/font)以查阅一些选择。你也可以在网上搜索需要的字体，并寻找一个 `pdflatex` 兼容的版本。如果你想要使用一种专有字体，可以搜寻一个合适的副本（大部分情况下都存在与原版足够类似的那种）。
 
 ## Unicode 时代
 
-因为 `pdflatex` 被限制为 8 位文件编码和 8 位字体，所以它并不能原生地支持现代 OpenType 字体（使用不同的字母与用于输入专业术语的脚本）来在不同的语言之间切换。当下 pdfTeX 有两个可原生使用 Unicode 输入与现代字体的替代引擎：XeTeX 和 LuaTeX。对于 LaTeX，这些引擎通常在您的编辑器中分别可以通过 `xelatex` 和 `lualatex` 被调用。
+因为 `pdflatex` 被限制为 8 位文件编码和 8 位字体，所以它并不能原生地支持现代 OpenType 字体（使用不同的字母与用于输入专业术语的脚本）来在不同的语言之间切换。当下 pdfTeX 有两个可原生使用 Unicode 输入与现代字体的替代引擎：XeTeX 和 LuaTeX。对于 LaTeX，这些引擎通常在你的编辑器中分别可以通过 `xelatex` 和 `lualatex` 被调用。
 
 在这些引擎中，字体选择是通过 `fontspec` 宏包实现的。对于简单文档可以如下面的例子一样简单：
 ```latex
@@ -45,9 +45,9 @@ TeX 和 LaTeX 被广泛使用之前，它们只需内置支持欧洲语言即可
 ```
 {: .noedit :}
 
-这个例子选择了 TeX Gyre Termes 字体，和上面的 `pdflatex` 例子一样。值得注意的是，这种方法对 *任何* OpenType 字体都能用。一些对 `pdflatex` 可用的字体在 `xelatex` 和 `lualatex` 中通过对应的宏包也可以使用。或者是和上面一样，通过使用 `fontspec` 宏包加载您电脑上安装的任何字体。
+这个例子选择了 TeX Gyre Termes 字体，和上面的 `pdflatex` 例子一样。值得注意的是，这种方法对 *任何* OpenType 字体都能用。一些对 `pdflatex` 可用的字体在 `xelatex` 和 `lualatex` 中通过对应的宏包也可以使用。或者是和上面一样，通过使用 `fontspec` 宏包加载你电脑上安装的任何字体。
 
-[LaTeX 字体目录](https://www.tug.org/FontCatalogue/)展示了可用的 OpenType 字体，因此您也可以用它来查阅字体资源。当然也可以使用前文提到的 [CTAN 页面](https://www.ctan.org/topic/font)。
+[LaTeX 字体目录](https://www.tug.org/FontCatalogue/)展示了可用的 OpenType 字体，因此你也可以用它来查阅字体资源。当然也可以使用前文提到的 [CTAN 页面](https://www.ctan.org/topic/font)。
 
 选择好字体之后，就可以直接向文档里输入普通的 Unicode 字体了。下面的例子展示了一些拉丁字母、德语字母以及中日韩（CJK）表意文字的输入：
 

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "插图与定位"
-description: "本课展示了如何向您的文档中添加插图、如何改变他们的外观以及如何在 PDF 中自动地固定或浮动这些插图。"
+description: "本课展示了如何向你的文档中添加插图、如何改变他们的外观以及如何在 PDF 中自动地固定或浮动这些插图。"
 toc-anchor-text: "插图"
 toc-description: "图片的外观和位置。"
 ---
@@ -10,7 +10,7 @@ toc-description: "图片的外观和位置。"
 ## 插图与定位
 
 <span
-  class="summary">本课展示了如何向您的文档中添加插图、如何改变他们的外观以及如何自动地固定或浮动这些插图。</span>
+  class="summary">本课展示了如何向你的文档中添加插图、如何改变他们的外观以及如何自动地固定或浮动这些插图。</span>
 
 为了向 LaTeX 文档插入外部来源的图片，需要使用 `graphicx` 宏包来向 LaTeX 添加 `\includegraphics` 命令。
 
@@ -28,9 +28,9 @@ is an imported PDF.
 \end{document}
 ```
 
-您可以插入 EPS, PNG, JPG 以及 PDF 文档。如果您有多于一种后缀的同名图像，那么可以写成 `example-image.png`。（如果您没有指定后缀名，那么 `graphicx` 宏包会尝试猜测出后缀名。）
+你可以插入 EPS, PNG, JPG 以及 PDF 文档。如果你有多于一种后缀的同名图像，那么可以写成 `example-image.png`。（如果你没有指定后缀名，那么 `graphicx` 宏包会尝试猜测出后缀名。）
 
-您或许注意到，这里我们使用了一个新的环境：`center`，它用来将图片于页面水平居中。[稍后](lesson-11)我们会讨论更多关于间距和定位的内容。
+你或许注意到，这里我们使用了一个新的环境：`center`，它用来将图片水平居中于页面。[稍后](lesson-11)我们会讨论更多关于间距和定位的内容。
 
 ## 更改图片外观
 
@@ -54,7 +54,7 @@ Some text
 \end{document}
 ```
 
-您也可以尝试采用 `scale` 命令缩放图片，或者指定 `angle` 角度以旋转图片，亦可通过 `clip` 和 `trim` 裁切图片。
+你也可以尝试采用 `scale` 命令缩放图片，或者指定 `angle` 角度以旋转图片，亦可通过 `clip` 和 `trim` 裁切图片。
 
 ```latex
 \documentclass{article}
@@ -92,7 +92,7 @@ Test location.
 \end{document}
 ```
 
-这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是，浮动体可以在原来的地方（`Test location` 旁边），或者是一页的顶部。您最多可以使用四种位置描述符（position specifier）：
+这里 LaTeX 将图片和题注从 `Test location` 处移动到第二页的顶部，因为第一页下方已经没有图片大小的空间了。`ht` 选项影响了 LaTeX 在何处放置浮动体：这两个字母的意思是，浮动体可以在原来的地方（`Test location` 旁边），或者是一页的顶部。你最多可以使用四种位置描述符（position specifier）：
 
 - `h` Here 这里（如果可以的话）
 - `t` Top 页面顶部
@@ -101,11 +101,11 @@ Test location.
 
 [稍后](lesson-09)，我们会了解该如何交叉引用浮动体以在文段中产生指向它们的链接。
 
-您或许注意到了我们使用 `\centering` 而不是 `center` 环境来水平居中图片。这将避免浮动环境和 `center` 环境都会增加纵向间隔的局面。
+你或许注意到了我们使用 `\centering` 而不是 `center` 环境来水平居中图片。这将避免浮动环境和 `center` 环境都会增加纵向间隔的局面。
 
 ## 练习
 
-尝试替代掉例子中的「标准」图片，变为您创建的一张图片。
+尝试替代掉例子中的「标准」图片，变为你创建的一张图片。
 
 探索 `height`, `width`, `angle` 和 `scale` 可以做到什么。
 
