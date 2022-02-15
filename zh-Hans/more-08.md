@@ -292,7 +292,7 @@ C & D D D D D D D\\
 
 `tabular` 构造了一个不可破损的盒子，因此它必须足够小以适配于一页之内，而且经常放置于 `table` 浮动体环境中。
 
-好几个宏包提供了相似的名称变种以允许跨页。这里我们展示 `longtable` 宏包：
+好几个宏包提供了相似语法的变种以允许跨页。这里我们展示 `longtable` 宏包：
 
 ```latex
 \documentclass{article}

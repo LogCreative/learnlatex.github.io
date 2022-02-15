@@ -25,4 +25,4 @@ More text here.
 \end{document}
 ```
 
-我们选择了让链接和正常文本颜色相同，尝试删除 `hidelinks` 查看这是为什么！
+我们选择了让链接和正常文本颜色相同，尝试删除 `hidelinks` 看看是为什么！
