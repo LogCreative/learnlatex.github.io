@@ -96,7 +96,7 @@ l.8 My command is used here \mycommand
 \end{document}
 ```
 
-这里错误出现于结束可选参数时无法匹配的 `}`。这个大括号会导致 LaTeX 解析选项时发生错误，您将得到一个没有帮助的内部错误：
+这里错误出现于结束可选参数时无法匹配的 `}`。这个大括号会导致 LaTeX 解析选项时发生错误，你将得到一个没有帮助的内部错误：
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.

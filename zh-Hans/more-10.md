@@ -116,7 +116,7 @@ $\mathbf{\pi} r^2$ % \mathbf 的不良使用
 \end{document}
 ```
 
-如果您使用类似于正常字重的粗体符号（正如 `\boldmath` 所用的那样），那么您可以用 `bm` 宏包里的 `\bm` 命令。注意 `\bm` 对于像 `=` 和希腊字母之类的符号也适用。（注意 `\mathbf` 在上面的例子中对于 `\pi` 并没有作用。）
+如果你使用类似于正常字重的粗体符号（正如 `\boldmath` 所用的那样），那么你可以用 `bm` 宏包里的 `\bm` 命令。注意 `\bm` 对于像 `=` 和希腊字母之类的符号也适用。（注意 `\mathbf` 在上面的例子中对于 `\pi` 并没有作用。）
 
 ```latex
 \documentclass[a4paper]{article}
@@ -157,7 +157,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Unicode Math
 
-将会在[第 14 课](lesson-14)看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但允许您加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见[宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
+将会在[第 14 课](lesson-14)看到，也有使用 OpenType 字体的 TeX 变种引擎。默认情况下，这些引擎还是会使用经典 TeX 数学字体，但允许你加载 `unicode-math` 宏包来使用 OpenType 数学字体。该宏包的细节已经超出本课程的范畴，可参见[宏包文档](https://texdoc.net/pkg/unicode-math)。当然，我们将在此给出一个小例子。
 
 ```latex
 % !TEX lualatex
