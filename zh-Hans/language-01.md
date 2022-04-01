@@ -2,10 +2,12 @@
 layout: "lesson"
 lang: "zh-Hans"
 title: "排版中文"
-description: "本教程将展示在 LaTeX 中排版中文的基本方法，主要使用 `ctex` 宏包或文档类。"
+description: "本教程将展示在 LaTeX 中排版中文的基本方法，主要使用 ctex 宏包或文档类。"
 toc-anchor-text: "排版中文"
 toc-description: "如何优雅地在 LaTeX 中使用中文？"
 ---
+
+# 排版中文
 
 如需排版中文文档，可使用 `ctexart`、`ctexrep`、`ctexbook` 分别代替标准文档类 `article`、`report`、`book`；如果使用其他文档类，则可额外调用 `ctex` 宏包。它们会添加对中文字体的支持，同时还会处理中文排版中的一些细节，包括行距调整、段落缩进、标点符号禁则（如句号、逗号不允许出现在行首）等。文档需要以 UTF-8 编码保存，并建议使用 `xelatex` 或 `lualatex` 编译：
 
@@ -67,7 +69,7 @@ toc-description: "如何优雅地在 LaTeX 中使用中文？"
 \begin{document}
 \begin{itemize}
   \item 正文（宋体）
-  \item \textsc{无衬线（黑体）}
+  \item \textsf{无衬线（黑体）}
   \item \textit{楷体}
   \item \texttt{仿宋}
 \end{itemize}
